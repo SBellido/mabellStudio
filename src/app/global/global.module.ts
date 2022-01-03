@@ -1,17 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { GlobalRoutingModule } from './global-routing.module';
-import { GlobalComponent } from './global.component';
 
+/* PrimeNG */
+import { MenubarModule } from 'primeng/menubar';
+
+/* Components */
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
-  declarations: [
-    GlobalComponent
+  exports: [
+    NavbarComponent
+  ],
+  declarations: [ 
+    NavbarComponent
   ],
   imports: [
     CommonModule,
-    GlobalRoutingModule
+    MenubarModule
   ]
 })
 export class GlobalModule { }

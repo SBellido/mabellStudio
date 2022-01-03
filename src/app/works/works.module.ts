@@ -1,17 +1,25 @@
+/* Angular */
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+/* Modules */
+import { GlobalModule }  from '../global/global.module';
 import { WorksRoutingModule } from './works-routing.module';
-import { WorksComponent } from './works/works.component';
+
+/* Components */
+import { WorksComponent } from './works.component';
+import { HomeComponent } from './components/home/home.component';
 
 
 @NgModule({
   declarations: [
-    WorksComponent
+    WorksComponent,
+    HomeComponent
   ],
   imports: [
     CommonModule,
-    WorksRoutingModule
+    GlobalModule,
+    WorksRoutingModule,
   ]
 })
 export class WorksModule { }
