@@ -1,20 +1,65 @@
 <article class="_container_all">
   <section class="_container_card">
-    <div class="_card">
+    <div class="_card_ux_ui">
       <div class="_header">
         <img class="_card_image" 
           src="../assets/images/ux_ui/v-life/logo/v_life.png" alt="Logo del proyecto">
       </div>
       <div class="_card_body">
-        <p class="_p_card">App mobile que <span>conecta pacientes con profesionales de salud.</span>En 2019, Sebastián fue encargado de realizar <span>rediseño de marca, desarrollo UX | UI, diseño de interacción y armado de prototipos en alta definición</span> para Trenda Software. La aplicación fue lanzada en 2020 en Argentina.
+        <p class="_p_card">App mobile que <b>conecta pacientes con profesionales de la salud.</b> 
+          En <b>2019, Sebastián</b> fue encargado de realizar <b>rediseño de marca, desarrollo UX | UI, 
+            diseño de interacción y armado de prototipos en alta definición</b> para Trenda Software. 
+            La <b>aplicación</b> fue <b>lanzada en 2020</b> en Argentina.
         </p>
       </div>
-      <div class="_footer">
-        <button class="_button_see_more"
-          (click)="routeVlife()" mdbBtn color="primary">
-          VER PROYECTO
-        </button>
+    </div>
+    <div class="_footer">
+      <button class="_button_see_more"
+        (click)="routeVlife()" mdbBtn color="primary">
+        VER PROYECTO
+      </button>
+    </div>
+  </section>
+  <section class="_container_card">
+    <div class="_card_ux_ui">
+      <div class="_header">
+        <img class="_card_image" 
+          src="../assets/images/ux_ui/hunt/logo/hunt_logo.png" alt="Logo del proyecto">
       </div>
+      <div class="_card_body">
+        <p class="_p_card">Sistema de <b>software complejo</b> diseñado para realizar <b>seguimiento de envíos en tiempo real, 
+          asignaciones de viajes y personalización de recorridos.</b> En 2020, Sebastián realizó <b>análisis heurístico, 
+          rediseño de la interfaz, naming, diseño de marca, landing page y desarrollo de software frontend.</b> 
+          Este producto fue desarrollado y es distribuído por Stormtech Solutions SRL.
+        </p>
+      </div>
+    </div>
+    <div class="_footer">
+      <button class="_button_see_more"
+        (click)="routeVlife()" mdbBtn color="primary">
+        VER PROYECTO
+      </button>
+    </div>
+  </section>
+  <section class="_container_card">
+    <div class="_card_ux_ui">
+      <div class="_header">
+        <img class="_card_image" 
+          src="../assets/images/ux_ui/travel_log/logo/travelLog_logo.png" alt="Logo del proyecto">
+      </div>
+      <div class="_card_body">
+        <p class="_p_card">App mobile que <b>permite agendar viajes, asociando vuelos, 
+          reservas, excursiones, </b>entre otras funcionalidades. Sebastián <b>realizó diseño de logo, captura de requerimientos, 
+          user stories, diseño de interacción, wireframes, mockups y maqueta </b>en el marco de la Cátedra Introducción 
+          a las Metodologías de desarrollo de software de la carrera <b>TUDAI | FCEx | UniCen</b> Tandil Argentina.
+        </p>
+      </div>
+    </div>
+    <div class="_footer">
+      <button class="_button_see_more"
+        (click)="routeVlife()" mdbBtn color="primary">
+        VER PROYECTO
+      </button>
     </div>
   </section>
 
@@ -24,26 +69,3 @@
     </button>
   </div>
 
-
-  <mdb-carousel [isControls]="false" class="carousel-multi-item multi-animation" 
-  [type]="'carousel-multi-item'" [animation]="'slide'">
-    <mdb-carousel-item *ngFor="let item of slides; let i = index">
-      <div class="_card" *ngFor="let card of item; let cardIndex = index">
-        <mdb-card class="my-1 h-100">
-          <mdb-card-img class="_card_image" [src]="card.img" alt="Logo del proyecto"></mdb-card-img>
-          <mdb-card-body class="_card_body">
-            <p class="_p_card">{{card.description}}</p>
-          </mdb-card-body>
-          <mdb-card-footer>
-            <a (click)="routeVlife()" mdbBtn color="primary" class="_button_see_more">{{card.buttonText}}</a>
-          </mdb-card-footer>
-        </mdb-card>
-      </div>
-    </mdb-carousel-item>
-  </mdb-carousel>
-  <div class="_container_button">
-    <button mat-button class="_button_back" routerLink="../">
-      <mat-icon class="_icon_button">keyboard_backspace</mat-icon>volver
-    </button>
-  </div>
-</article>
