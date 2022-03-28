@@ -38,8 +38,13 @@ export class UxUiComponent implements OnInit {
   
   ngOnInit() {
     this.slides = this.chunk(this.cards, 3);
+    this.topFunction();
   }
 
+  topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
   routeVlife() {    
     this.router.navigateByUrl("works/design/ux-ui/v-life");
   }

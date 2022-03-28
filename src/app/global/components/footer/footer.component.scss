@@ -38,13 +38,7 @@
     opacity: 80%;
     cursor: pointer;
   }
-  section._container_buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background: $accent_color;
-    margin: 0rem 1rem;
-  }
+
   ._container_button {
     background: $accent_color;
     display: flex;
@@ -52,16 +46,57 @@
     justify-content: center;
     align-items: center; 
   }
+
+  // ._button:hover { 
+  //   background: $second_color_light;
+  // }
+  // ._active_button {
+  //   background: $third_color; 
+  // }
+  // ._inactive_button {
+  //   background: $second_color;
+  // }
+  // ._icon_nav {
+  //   color: $first_color;
+  //   margin-right: 0px !important;
+  //   padding: .7rem 0rem;
+  // }
+  // p._text_button {
+  //   font-size: .7rem;
+  //   color: $first_color;
+  //   margin-block-start: .5em;
+  //   margin-block-end: .5em;
+  // }
+  // section._container_buttons {
+  //   display: flex;
+  //   flex-direction: row;
+  //   justify-content: space-around;
+  //   background: $accent_color;
+  //   margin: 0rem 1rem;
+  // }
+  section._container_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    background: $accent_color;
+    margin: 1rem 1.5rem;
+  }
+  // ._button { 
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   cursor: pointer;
+  //   border-radius: 50px;  
+  //   padding: 0rem .7rem;
+  // }
   ._button { 
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     border-radius: 50px;  
-    padding: 0rem .7rem;
-  }
-  ._button:hover { 
-    background: $second_color_light;
+    padding: 0rem .4rem;
   }
   ._active_button {
     background: $third_color; 
@@ -72,14 +107,20 @@
   ._icon_nav {
     color: $first_color;
     margin-right: 0px !important;
-    padding: .7rem 0rem;
+    padding: .4rem 0rem;
   }
-  p._text_button {
+    p._text_button {
     font-size: .7rem;
     color: $first_color;
     margin-block-start: .5em;
     margin-block-end: .5em;
   }
+  // p._text_button {
+  //   font-size: .7rem;
+  //   color: $accent_color;
+  //   margin-block-start: .5em;
+  //   margin-block-end: .5em;
+  // }
   div._container_firm {
     margin: .5rem auto;
     width: 14rem;

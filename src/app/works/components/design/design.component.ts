@@ -15,9 +15,14 @@ export class DesignComponent implements OnInit {
 
   constructor(private router: Router) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {  
+    this.topFunction();
   }
 
+  topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
   showMoreUxUi() {  
     this.visibleUxUi ? 
       this.visibleUxUi = false : 

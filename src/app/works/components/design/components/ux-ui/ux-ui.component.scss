@@ -3,6 +3,9 @@
 /* SCREEN 0px */
 @media (min-width: 0px) {
 
+  article {
+    padding-bottom: 3rem;
+  }
   section._container_card {
     display: flex;
     flex-direction: column;
@@ -62,7 +65,7 @@
   div._container_button {
     display: flex;
     justify-content: center;
-    margin: 4em auto;
+    margin: 3em auto 0rem auto;
   }
   button._button_back {
     background-color: $fifth_color;

@@ -2,6 +2,21 @@
 <div class="_container_mobile">
   <img class="_mobile" src="../assets/images/ux_ui/v-life/mobile.png" alt="">
 </div>
+<article class="_container_all">
+  <section class="_gallery">    
+    <div class="_container_image">
+      <img class="_image_gallery" alt="First slide"
+        [src]="imgGallery">
+      <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
+    </div>  
+    <div class="_container_button">
+      <button mat-button class="_button_back" routerLink="../">
+        <mat-icon class="_icon_button">keyboard_backspace</mat-icon>volver
+      </button>
+    </div>
+  </section>
+</article>
+<!-- 
 <div class="_container_all">
   <mdb-carousel [isControls]="false" class="carousel slide carousel-fade" [animation]="'fade'">
     <mdb-carousel-item>
@@ -33,7 +48,7 @@
       <mat-icon class="_icon_button">keyboard_backspace</mat-icon>volver
     </button>
   </div>
-</div>
+</div> -->
 
 <!-- 
 <section class="container-home" id="container-home" name="container-home">      

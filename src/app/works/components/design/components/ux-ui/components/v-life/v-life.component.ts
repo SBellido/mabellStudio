@@ -8,11 +8,21 @@ import { Router } from '@angular/router';
 })
 export class VLifeComponent implements OnInit {
 
+  imgGallery:string = '';
+  images:string[] = [];
+
   constructor(private router: Router) { }
 
   ngOnInit(): void {
+    this.activeGallery();
   }
 
+  activeGallery() {
+    this.imgGallery='../assets/images/ux_ui/v-life/patient/start.png';
+  }
+  nextImage() {
+    
+  }
   routeBack() {    
     this.router.navigateByUrl('works/design/ux-ui')
   }
