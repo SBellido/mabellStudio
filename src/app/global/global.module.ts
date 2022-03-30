@@ -11,22 +11,33 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
+import { GalleryComponent } from './components/gallery/gallery/gallery.component';
+import { GalleryModalComponent } from './components/gallery_modal/gallery-modal/gallery-modal.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatDividerModule } from '@angular/material/divider';
 
 @NgModule({
   exports: [
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    GalleryComponent
   ],
   declarations: [ 
     NavbarComponent, 
-    FooterComponent
+    FooterComponent, 
+    GalleryComponent, 
+    GalleryModalComponent
   ],
   imports: [
     CommonModule,
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    MatMenuModule
+    MatMenuModule,
+    MatDialogModule,
+    MatGridListModule,
+    MatDividerModule
   ]
 })
 

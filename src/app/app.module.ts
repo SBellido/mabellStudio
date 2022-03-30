@@ -6,6 +6,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { ErrorFourZeroFourComponent } from './errors/error-four-zero-four/error-four-zero-four.component';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { GalleryService } from './services/gallery.services';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +19,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [GalleryService],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

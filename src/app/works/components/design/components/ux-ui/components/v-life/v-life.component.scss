@@ -37,12 +37,17 @@
     margin-bottom: 4rem;
   }
   button._btn_gallery {
+    background-color: $accent_color;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50px;
     padding: 1.5rem;
     border: none;
+    cursor: pointer;
+  }
+  button._btn_gallery:hover {
+    background-color: $quarter_color_light
   }
   button._button_back {
     background-color: $fifth_color;

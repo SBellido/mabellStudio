@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { GalleryImage } from 'src/app/models/models';
 
 @Component({
   selector: 'app-v-life',
@@ -9,7 +10,7 @@ import { Router } from '@angular/router';
 export class VLifeComponent implements OnInit {
 
   imgGallery:string = '';
-  images:string[] = [];
+  images: GalleryImage | undefined;
   activeNext:boolean = false;
   activeBefore:boolean = false;
 
@@ -17,10 +18,11 @@ export class VLifeComponent implements OnInit {
 
   ngOnInit(): void {
     this.activeGallery();
+    
   }
 
   activeGallery() {
-    this.imgGallery='../assets/images/ux_ui/v-life/patient/start.png';
+    this.imgGallery='';
   }
   nextImg() {
     this.imgGallery='../assets/images/ux_ui/v-life/patient/login_pass_input.png';
