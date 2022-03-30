@@ -8,34 +8,41 @@
     flex-direction: column;
     padding-bottom: 3rem;
   }
-  // section._gallery {
-  //   mar
-  // }
-  .carousel {
+  section._gallery {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
   }
   div._container_mobile {
     display: flex;
     justify-content: center;
     position: absolute;
     top: 140px;
-    z-index: 0;  
+    z-index: -1;  
   }
   img._mobile {   
     width: 68%;
   }
   div._container_image {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding-top: 2.5rem;
   }
   img._image_gallery {
-    width: 62%;
-    z-index: -1;  
+    width: 111%;
+    z-index: -2;  
     margin-bottom: 4rem;
+  }
+  button._btn_gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    padding: 1.5rem;
+    border: none;
   }
   button._button_back {
     background-color: $fifth_color;
@@ -56,5 +63,11 @@
   mat-icon._icon_button {
     margin-right: .5rem;
   }
+
+
+  // .carousel {
+  //   display: flex;
+  //   flex-direction: row;
+  // }
 
 }

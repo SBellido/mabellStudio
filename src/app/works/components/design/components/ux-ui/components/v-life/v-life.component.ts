@@ -10,6 +10,8 @@ export class VLifeComponent implements OnInit {
 
   imgGallery:string = '';
   images:string[] = [];
+  activeNext:boolean = false;
+  activeBefore:boolean = false;
 
   constructor(private router: Router) { }
 
@@ -20,8 +22,14 @@ export class VLifeComponent implements OnInit {
   activeGallery() {
     this.imgGallery='../assets/images/ux_ui/v-life/patient/start.png';
   }
-  nextImage() {
+  nextImg() {
+    this.imgGallery='../assets/images/ux_ui/v-life/patient/login_pass_input.png';
     
+  }
+  
+  beforeImg() {
+    console.log("anterior imagen");
+
   }
   routeBack() {    
     this.router.navigateByUrl('works/design/ux-ui')
