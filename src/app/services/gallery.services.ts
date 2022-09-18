@@ -31,7 +31,7 @@ export class GalleryService {
     for (let i = 0; i < 5; i++) {
       this.galleryImages.push(
         {
-          src: `assets/images/image_${i}.jpg`,
+          src: `assets/images/dev/investigar/${i}.png`,
           position: i,
           alt: `Image ${i}`,
           first: (i === 0),

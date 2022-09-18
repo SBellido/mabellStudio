@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+
 import { GalleryImage } from 'src/app/models/models';
+import { GalleryService } from 'src/app/services/gallery.services';
 
 @Component({
   selector: 'app-v-life',
@@ -13,12 +15,13 @@ export class VLifeComponent implements OnInit {
   images: GalleryImage | undefined;
   activeNext:boolean = false;
   activeBefore:boolean = false;
-
-  constructor(private router: Router) { }
+ 
+  constructor(
+    private router: Router,
+    private galleryService: GalleryService) {
+  }
 
   ngOnInit(): void {
-    this.activeGallery();
-    
   }
 
   activeGallery() {

@@ -4,7 +4,7 @@
 </div>
 <article class="_container_all">
   <section class="_gallery">  
-    <button class="_btn_gallery _before" (click)="beforeImg()"
+    <!-- <button class="_btn_gallery _before" (click)="beforeImg()"
       [ngClass]="activeBefore ? '_active_button' : '_inactive_button'">
       <mat-icon>navigate_before</mat-icon>
     </button>  
@@ -16,7 +16,16 @@
     <button class="_btn_gallery _next" (click)="nextImg()"
       [ngClass]="activeBefore ? '_active_button' : '_inactive_button'">
       <mat-icon>navigate_next</mat-icon>
-    </button> 
+    </button>  -->
+    <button fxHide fxShow.gt-sm *ngIf="!image.first" mat-button (click)="changeImg(-1)">
+      <mat-icon>chevron_left</mat-icon>
+    </button>
+    <img class="mat-dialog-content-img"
+         [src]="image.src"
+         [alt]="image.alt">
+    <button fxHide fxShow.gt-sm *ngIf="!image.last" mat-button (click)="changeImg(1)">
+      <mat-icon>chevron_right</mat-icon>
+    </button>
   </section>
 </article>
 <div class="_container_button">
