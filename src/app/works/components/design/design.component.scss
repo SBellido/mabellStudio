@@ -36,6 +36,10 @@
   ._container_item {
     cursor: pointer;
     background-color: $third_color;
+    background: linear-gradient(
+      0deg, $third_color 33%, 
+      $third_color_light 100%
+    );
     display: flex;
     justify-content: center;
     align-items: center;

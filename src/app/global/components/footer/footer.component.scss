@@ -103,7 +103,10 @@
     background: $third_color; 
   }
   ._inactive_button {
-    background: $second_color;
+    background: radial-gradient(
+      circle, $second_color_light 9%, 
+      $second_color 100%
+    );
   }
   ._icon_nav {
     color: $first_color;
