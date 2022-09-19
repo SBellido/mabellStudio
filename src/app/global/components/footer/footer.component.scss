@@ -80,7 +80,8 @@
     justify-content: space-between;
     position: sticky;
     background: $accent_color;
-    margin: 1rem 1.5rem;
+    margin: 1rem;
+    padding: 0 3.5rem;
   }
   // ._button { 
   //   display: flex;
@@ -139,6 +140,10 @@
     justify-content: center;
     font-weight: 600;
     background: $quarter_color;
+    background: linear-gradient(
+      0deg, $quarter_color 33%, 
+      $quarter_color_light 100%
+    );
     color: $first_color;
     padding: .7rem 5rem;
     width: 100px;

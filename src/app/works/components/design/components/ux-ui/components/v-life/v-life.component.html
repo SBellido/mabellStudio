@@ -17,7 +17,7 @@
       [ngClass]="activeBefore ? '_active_button' : '_inactive_button'">
       <mat-icon>navigate_next</mat-icon>
     </button>  -->
-    <button fxHide fxShow.gt-sm *ngIf="!image.first" mat-button (click)="changeImg(-1)">
+    <!-- <button fxHide fxShow.gt-sm *ngIf="!image.first" mat-button (click)="changeImg(-1)">
       <mat-icon>chevron_left</mat-icon>
     </button>
     <img class="mat-dialog-content-img"
@@ -25,7 +25,7 @@
          [alt]="image.alt">
     <button fxHide fxShow.gt-sm *ngIf="!image.last" mat-button (click)="changeImg(1)">
       <mat-icon>chevron_right</mat-icon>
-    </button>
+    </button> -->
   </section>
 </article>
 <div class="_container_button">

@@ -25,7 +25,15 @@ export class HomeComponent implements OnInit {
     500,600,700,800,900
   ];
   
+  // colorFont: string[] = [
+  //   '#9b9b9b','#7f7f7f','#171717',
+  //   '#bbbbbb','#afafaf','#7e7e7e',
+  //   '#a5a5a5','#888888','#b9b9b9'
+  // ]; 
   colorFont: string[] = [
+    '#9b9b9b','#7f7f7f','#171717',
+    '#bbbbbb','#afafaf','#7e7e7e',
+    '#a5a5a5','#888888','#b9b9b9',
     '#03caff','#03caff','#7AE3FF',
     '#f9f9f9','#f9f9f9','#FFDD57',
     '#f8cbf6','#f8cbf6','#f89af3',

@@ -17,14 +17,14 @@
     </mat-button>
     <p class="_text_button _text_button_footer">desarrollo</p>
   </div>
-  <div class="_container_button">
+  <!-- <div class="_container_button">
     <mat-button class="_button" id="intervention"
       [ngClass]="interventionActive ? '_active_button' : '_inactive_button'" 
       (click)="setButtonsStyle('intervention')">
       <mat-icon class="_icon_nav">color_lens</mat-icon>
     </mat-button>
     <p class="_text_button _text_button_footer">intervención</p>
-  </div>
+  </div> -->
   <div class="_container_button">
     <mat-button class="_button" id="biography"
       [ngClass]="biographyActive ? '_active_button' : '_inactive_button'" 
@@ -50,10 +50,10 @@
         (click)="setButtonsStyle('development')" mat-menu-item>
         <mat-icon class="_icon_nav_hamburguer">code</mat-icon><span>desarrollo</span>
       </mat-button>
-      <mat-button class="_button_hamburguer" id="intervention"
+      <!-- <mat-button class="_button_hamburguer" id="intervention"
         (click)="setButtonsStyle('intervention')" mat-menu-item>
         <mat-icon class="_icon_nav_hamburguer">color_lens</mat-icon><span>intervención</span>
-      </mat-button>
+      </mat-button> -->
       <mat-button class="_button_hamburguer" id="biography" 
         (click)="setButtonsStyle('biography')" mat-menu-item>
         <mat-icon class="_icon_nav_hamburguer">fingerprint</mat-icon><span>biografía</span>
