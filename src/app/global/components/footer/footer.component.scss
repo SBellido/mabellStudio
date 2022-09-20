@@ -104,7 +104,7 @@
   }
   ._inactive_button {
     background: radial-gradient(
-      circle, $second_color_light 9%, 
+      circle, $second_color_lighter 9%, 
       $second_color 100%
     );
   }
@@ -141,11 +141,11 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-weight: 600;
-    background: $quarter_color;
+    font-weight: 500;
+    background: $fifth_color;
     background: linear-gradient(
-      0deg, $quarter_color 33%, 
-      $quarter_color_light 100%
+      0deg, $fifth_color 33%, 
+      $fifth_color_light 100%
     );
     color: $first_color;
     padding: .7rem 5rem;
