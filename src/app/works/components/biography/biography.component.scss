@@ -1,13 +1,101 @@
 @import '../../../global/global.component.scss';
 
-._container_all {
+article._container_all {
   perspective: 800px;
 }
-._container {
-  width: 100vw;
-  height: 82vh;
-  padding-top: 2rem;
+section._container {
+  height: auto;
+  padding-top: 0rem;
+}
+div._container_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 2rem .5rem 0rem .5rem;
+}
+hr._line_title {
+  width: 30%;
+  border: 1px solid $third_color;
+}
+h1._title {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: $third_color;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
 }
 div._container_cards {
-  padding: 5rem 2rem;
+  background-color: $first_color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: .5rem 0rem 5rem 0rem;
+}
+._container_item {
+  cursor: pointer;
+  background-color: $third_color;
+  background: linear-gradient(
+    0deg, $third_color 33%, 
+    $third_color_light 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem 0rem;
+  width: 84vw;
+  border-radius: 50px;
+  margin: 1.3rem;
+}
+._container_item:hover { 
+  background-color: $third_color_light;
+  
+}
+._container_item_disabled {
+  background-color: $first_color_medium;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem 0rem;
+  width: 84vw;
+  border-radius: 50px;
+  margin: 1.3rem;
+}
+h2._item , 
+h2._item_disabled {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+h2._item {
+  color: $first_color;
+}
+h2._item_disabled {
+  color: $first_color_light;
+}
+div._container_info {
+  background-color: $accent_color;
+  width: 89vw;
+  height: auto;
+  border-radius: 33px;
+  margin: -1rem 2rem 1rem 2rem;
+  padding: 1rem;
+}
+
+
+span {
+  font-weight: 800;
+}
+p._info {
+  font-size: .9rem;
+  color: $first_color;
+  margin: 1rem .5rem;
+  line-height : 1.3rem;
+}
+div._container_button {
+  display: flex;
+  justify-content: center;
 }

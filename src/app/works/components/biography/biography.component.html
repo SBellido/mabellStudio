@@ -1,7 +1,46 @@
 <article class="_container_all">
   <section class="_container">
+    <div class="_container_title">
+      <hr class="_line_title"><h1 class="_title">biografía</h1><hr class="_line_title">
+    </div>
     <div class="_container_cards">
-      <button routerLink="academic">
+      <section class="_container_item" (click)="showMoreLabor()">
+        <h2 class="_item" >
+          Laboral
+        </h2>
+      </section>
+      <div class="_container_info" [hidden]="!visibleLabor">
+        <p class="_info"><span>2022 - en curso</span></p>
+        <p class="_info"><span>Ssr. UX | UI</span></p>
+        <p class="_info">Se llama <span>experiencia de usuario,</span> por su enfoque, a la <span>relación sistema humano|máquina,</span> 
+          y aparece como una evolución de la ergonomía, manteniendo al diseño en el papel protagónico
+          para la <span>búsqueda de satisfacción en las personas que interactúan con un sistema, producto o entorno.</span></p>
+        <p class="_info"><span>UI</span> - El <span>diseño de interfaz de usuario</span> 
+          es el resultado de definir la <span>forma, función, utilidad, ergonomía, imagen de marca</span>
+          y otros aspectos que afectan a la apariencia externa de las interfaces en sistemas de todo tipo.
+        </p>
+      </div>
+      <section class="_container_item" (click)="showMoreAcademic()">
+        <h2 class="_item" >
+          Académica
+        </h2>
+      </section>
+      <div class="_container_info" [hidden]="!visibleAcademic">
+        <p class="_info"><span>UX</span> - 
+          Se llama <span>experiencia de usuario,</span> por su enfoque, a la <span>relación sistema humano|máquina,</span> 
+          y aparece como una evolución de la ergonomía, manteniendo al diseño en el papel protagónico
+          para la <span>búsqueda de satisfacción en las personas que interactúan con un sistema, producto o entorno.</span></p>
+        <p class="_info"><span>UI</span> - El <span>diseño de interfaz de usuario</span> 
+          es el resultado de definir la <span>forma, función, utilidad, ergonomía, imagen de marca</span>
+          y otros aspectos que afectan a la apariencia externa de las interfaces en sistemas de todo tipo.
+        </p>
+      </div>
+      <section class="_container_item_disabled">
+        <h2 class="_item_disabled" >
+          Personal
+        </h2>
+      </section>
+      <!-- <button routerLink="academic">
         Académica
       </button>
       <button routerLink="labor">
@@ -9,7 +48,7 @@
       </button>
       <button routerLink="personal">
         Personal
-      </button>
+      </button> -->
     </div>
   </section>
 </article>
