@@ -6,7 +6,7 @@
   article._container_footer {
     width: 100%;
     height: auto;
-    background-color: $accent_color;
+    background-color: $first_color_light;
   }
   div._divisor_bottom,
   div._divisor_top {
@@ -79,7 +79,7 @@
     flex-direction: row;
     justify-content: space-between;
     position: sticky;
-    background: $accent_color;
+    background: $first_color_light;
     margin: 1rem;
     padding: 0 3.5rem;
   }
@@ -185,8 +185,12 @@
     padding: 0.8rem;
     text-align: center;
   }
+  p._copyright {
+    font-weight: 300;
+    line-height: 1.5;
+  }
   p>span {
-    font-weight: 600;
+    font-weight: 500;
   }
   a:-webkit-any-link {
     text-decoration: none;
