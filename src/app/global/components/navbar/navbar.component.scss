@@ -120,6 +120,10 @@
   }
   ._active_button {
     background: $third_color; 
+    background: radial-gradient(
+      circle, $third_color_lighter 3%, 
+      $third_color 100%
+    );
   }
   ._inactive_button {
     background: radial-gradient(
