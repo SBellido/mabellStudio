@@ -25,15 +25,13 @@ export class BiographyComponent implements OnInit {
   showMoreLabor() {  
     this.visibleLabor ? 
       this.visibleLabor = false : 
-        this.visibleLabor = true, 
-        this.visibleAcademic = false;
+        this.visibleLabor = true; 
   }
 
   showMoreAcademic() {
     this.visibleAcademic ? 
       this.visibleAcademic = false : 
-        this.visibleAcademic = true,
-        this.visibleLabor = false;  
+        this.visibleAcademic = true;
   }
 
 }
