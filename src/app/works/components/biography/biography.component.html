@@ -9,7 +9,15 @@
           Académica
         </h2>
       </section>
-      <section class="_container_info" [hidden]="!visibleAcademic">
+      <app-academic [hidden]="!visibleAcademic"></app-academic>
+      <!-- <div class="_container_btn">
+        <button class="_btn_close" [hidden]="visibleAcademic" (click)="showMoreAcademic()">
+          <mat-icon>keyboard_arrow_up</mat-icon>
+          <span class="_close">CERRAR</span> 
+        </button>
+      </div> -->
+      <!-- TRATAR SECTION COMO COMPONENTE -->
+      <!-- <section class="_container_info" [hidden]="!visibleAcademic">
         <div class="_container_career">
           <h3 class="_year">TUDAI</h3>
           <p class="_info"><span>2017 | 2022</span></p>
@@ -21,9 +29,6 @@
                 <a class="_link" href="https://exa.unicen.edu.ar/tudai/" target="_blank">
                   <mat-icon>link</mat-icon>institución
                 </a>
-                <!-- <a class="_link" href="https://exa.unicen.edu.ar/tudai/" target="_blank">
-                  <mat-icon>link</mat-icon>título
-                </a> -->
               </section>
           </div>
         </div>
@@ -52,9 +57,6 @@
                 <a class="_link" href="https://www.vocaciondocente.com/" target="_blank">
                   <mat-icon>link</mat-icon>institución
                 </a>
-                <!-- <a class="_link" href="https://exa.unicen.edu.ar/tudai/" target="_blank">
-                  <mat-icon>link</mat-icon>título
-                </a> -->
               </section>
             </div>
           </div>
@@ -69,31 +71,12 @@
                 <a class="_link" href="http://www2.fba.unlp.edu.ar/dcv/carrera/plan-de-estudios/" target="_blank">
                   <mat-icon>link</mat-icon>institución
                 </a>
-                <!-- <a class="_link" href="https://exa.unicen.edu.ar/tudai/" target="_blank">
-                  <mat-icon>link</mat-icon>título
-                </a> -->
               </section>
           </div>
         </div>
-        
-
-<!--        
-        <section class="_container_links">
-          <p class="_link"><span class="_litte_title">Links de interés</span></p>
-          <div class="_link">
-            <a class="_link" href="https://exa.unicen.edu.ar/tudai/" target="_blank">TUDAI</a>
-            <a class="_link" href="https://uxdi.exa.unicen.edu.ar/" target="_blank">UXDI</a>
-            <a class="_link" href="http://www2.fba.unlp.edu.ar/dcv/carrera/plan-de-estudios/" target="_blank">DCV</a>
-            <a class="_link" href="https://www.vocaciondocente.com/" target="_blank">DCV</a>
-          </div>
-        </section> -->
-        <div class="_container_btn">
-          <button class="_btn_close" (click)="showMoreAcademic()">
-            <mat-icon>keyboard_arrow_up</mat-icon>
-            CERRAR
-          </button>
-        </div>
-      </section>
+      </section> -->
+      
+      
       <section class="_container_item" (click)="showMoreLabor()">
         <h2 class="_item" >
           Laboral
@@ -116,7 +99,11 @@
         </h2>
       </section>
       <p class="_item_disabled">en construcción</p>
-      <!-- <button routerLink="academic">
+    </div>
+  </section>
+</article>
+
+  <!-- <button routerLink="academic">
         Académica
       </button>
       <button routerLink="labor">
@@ -124,7 +111,14 @@
       </button>
       <button routerLink="personal">
         Personal
-      </button> -->
-    </div>
-  </section>
-</article>
+      </button> 
+      
+      <section class="_container_links">
+      <p class="_link"><span class="_litte_title">Links de interés</span></p>
+      <div class="_link">
+        <a class="_link" href="https://exa.unicen.edu.ar/tudai/" target="_blank">TUDAI</a>
+        <a class="_link" href="https://uxdi.exa.unicen.edu.ar/" target="_blank">UXDI</a>
+        <a class="_link" href="http://www2.fba.unlp.edu.ar/dcv/carrera/plan-de-estudios/" target="_blank">DCV</a>
+        <a class="_link" href="https://www.vocaciondocente.com/" target="_blank">DCV</a>
+      </div>
+    </section> -->
