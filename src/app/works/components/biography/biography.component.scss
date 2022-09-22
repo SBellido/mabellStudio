@@ -2,6 +2,7 @@
 
 article._container_all {
   perspective: 800px;
+
 }
 section._container {
   height: auto;
@@ -81,26 +82,49 @@ p._item_disabled {
   margin-top: -17px;
 }
 // --------------INFO-------------- //
-div._container_info {
+section._container_info {
   background-color: $accent_color;
   width: 89vw;
   height: auto;
   border-radius: 33px;
   margin: -1rem 2rem 1rem 2rem;
-  padding: 0 1rem 1rem 1rem;
+  padding: 0 1rem 1.5rem 1rem;
+}
+div._container_career {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: .5px solid $first_color_lighter;
+  padding-bottom: 1rem;
+}
+div._container_career_end {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+h3._year  {
+  margin: 2rem 0 0 0;
 }
 div._container_logo {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: .5rem;
 }
 img._logo {
-  width: 60vw;
+  width: 50vw;
+  // filter: grayscale(1);
+}
+._icon_link {
+  color: $fifth_color;
 }
 span {
   font-weight: 800;
 }
 span._litte_title {
-  color: $fifth_color;
+  color: $third_color;
   margin-bottom: 2rem;
 }
 p {
@@ -108,25 +132,36 @@ p {
 }
 p._info {
   color: $first_color;
-  margin: 1rem .5rem;
-  line-height : 1.3rem;
-}
-div._link {
-  // margin: 0 .5rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 75%;
+  line-height : 1.2rem;
+  margin: 0;
+  text-align: center;
 }
 ._link {
-  color: $fifth_color;
+  display: inherit;
+  align-items: inherit;
+  color: $first_color_lighter;
+  text-decoration: none;
 }
-div._container_links {
+section._container_links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  width: 60vw;
+}
+div._container_btn {
+  display: flex;
+  justify-content: center;
+}
+button._btn_close {
+  border-radius: 50%;
+  border: none;
+  background-color: $accent_color;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-div._container_button {
-  display: flex;
-  justify-content: center;
-}
+// div._container_button {
+//   display: flex;
+//   justify-content: center;
+// }
