@@ -10,7 +10,7 @@ export class BiographyComponent implements OnInit {
 
   visibleLabor: boolean = false;
   visibleAcademic: boolean = false;
-
+  
   constructor(private router: Router) { }
 
   ngOnInit(): void {  
