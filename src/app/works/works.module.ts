@@ -18,7 +18,7 @@ import { DesignComponent } from './components/design/design.component';
 import { DevelopmentComponent } from './components/development/development.component';
 import { InterventionComponent } from './components/intervention/intervention.component';
 import { BiographyComponent } from './components/biography/biography.component';
-import { GraphPublicityComponent } from './components/design/components/graph-publicity/graph-publicity.component';
+import { GraphicComponent } from './components/design/components/graphic/graphic.component';
 import { UxUiComponent } from './components/design/components/ux-ui/ux-ui.component';
 import { ExperimentalComponent } from './components/design/components/experimental/experimental';
 import { AcademicComponent } from './components/biography/components/academic/academic.component';
@@ -39,7 +39,7 @@ import { HuntComponent } from './components/design/components/ux-ui/components/h
     DevelopmentComponent,
     InterventionComponent,
     BiographyComponent,
-    GraphPublicityComponent,
+    GraphicComponent,
     UxUiComponent,
     ExperimentalComponent,
     AcademicComponent,
