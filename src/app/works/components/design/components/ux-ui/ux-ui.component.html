@@ -1,4 +1,7 @@
 <article class="_container_all">
+  <div class="_container_title">
+    <hr class="_line_title"><h1 class="_title">ux | ui / portafolio</h1><hr class="_line_title">
+  </div>
   <section class="_container_card">
     <div class="_card_ux_ui">
       <div class="_header">
@@ -13,7 +16,7 @@
         </p>
       </div>
     </div>
-    <div class="_footer">
+    <div class="_footer_card">
       <button class="_button_see_more"
         (click)="routeVlife()" mdbBtn color="primary">
         VER PROYECTO
@@ -34,9 +37,9 @@
         </p>
       </div>
     </div>
-    <div class="_footer">
+    <div class="_footer_card">
       <button class="_button_see_more"
-        (click)="routeVlife()" mdbBtn color="primary">
+        (click)="routeVlife()" mdbBtn>
         VER PROYECTO
       </button>
     </div>
@@ -55,7 +58,7 @@
         </p>
       </div>
     </div>
-    <div class="_footer">
+    <div class="_footer_card">
       <button class="_button_see_more"
         (click)="routeVlife()" mdbBtn color="primary">
         VER PROYECTO
@@ -63,10 +66,10 @@
     </div>
   </section>
 
-  <div class="_container_button">
+  <div class="_container_button_back">
     <button mat-button class="_button_back" routerLink="../">
-      <mat-icon class="_icon_button">keyboard_backspace</mat-icon>volver
+      <mat-icon class="_icon_button">keyboard_backspace</mat-icon>
     </button>
   </div>
 </article>
-
+<app-footer></app-footer>
