@@ -11,7 +11,7 @@ import { AcademicComponent } from './components/biography/components/academic/ac
 import { LaborComponent } from './components/biography/components/labor/labor.component';
 import { PersonalComponent } from './components/biography/components/personal/personal.component';
 import { GraphPublicityComponent } from './components/design/components/graph-publicity/graph-publicity.component';
-import { IllustrationSketchComponent } from './components/design/components/illustration-sketch/illustration-sketch.component';
+import { ExperimentalComponent } from './components/design/components/experimental/experimental';
 import { UxUiComponent } from './components/design/components/ux-ui/ux-ui.component';
 import { DesignComponent } from './components/design/design.component';
 import { DevelopmentComponent } from './components/development/development.component';
@@ -52,8 +52,8 @@ const routes: Routes = [
         component: VLifeComponent
       },
       {
-        path: 'design/illustration-sketch',
-        component: IllustrationSketchComponent
+        path: 'design/experimental',
+        component: ExperimentalComponent
       },
       {
         path: 'development',

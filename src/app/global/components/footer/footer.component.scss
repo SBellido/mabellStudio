@@ -10,7 +10,7 @@
   }
   div._divisor_bottom,
   div._divisor_top {
-    background-color: $second_color;
+    background-color: $third_color;
     width: 100%;
     height: .5rem;
   }
@@ -140,10 +140,10 @@
     align-items: center;
     justify-content: center;
     font-weight: 500;
-    background: $fifth_color;
+    background: $accent_color;
     background: linear-gradient(
-      0deg, $fifth_color 33%, 
-      $fifth_color_light 100%
+      0deg, $first_color_lighter 5%, 
+      $accent_color 100%
     );
     color: $first_color;
     padding: .7rem 5rem;
