@@ -140,7 +140,6 @@
     align-items: center;
     justify-content: center;
     font-weight: 500;
-    background: $accent_color;
     background: linear-gradient(
       0deg, $first_color_lighter 5%, 
       $accent_color 100%
@@ -151,6 +150,13 @@
     border: none;
     border-radius: 50px;
     cursor: pointer;
+  }
+  a._btn_footer:hover {
+    background: linear-gradient(
+      0deg, $third_color_light 5%, 
+      $third_color_lighter 100%
+    );
+    color: $first_color;
   }
   img._btn_icon {
     width: 1.7rem;
@@ -168,7 +174,6 @@
   }
   hr {
     width: 50%;
-    border: 1px solid $first_color;
     opacity: 50%;
   }
   p._o_divisor {

@@ -103,7 +103,8 @@
   }
   div._container_button_back {
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    padding: 0 0 0 4.7rem;
     margin: 3em auto 0rem auto;
   }
   button._button_back {
