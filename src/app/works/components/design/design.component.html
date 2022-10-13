@@ -1,7 +1,7 @@
 <article class="_container_all">
   <section class="_container">
     <div class="_container_title">
-      <hr class="_line_title"><h1 class="_title">diseño</h1><hr class="_line_title">
+      <hr class="_line_title"><h1 class="_title">design</h1><hr class="_line_title">
     </div>
     <div class="_container_cards">
       <section class="_container_item" (click)="showMoreUxUi()">
@@ -34,17 +34,25 @@
           </div>   
         </figure><hr>
         <p class="_info"><span>UX</span> - 
+          It is called <span>user experience,</span> due to its approach, to the <span>human system|machine relationship,</span>
+          and appears as an evolution of ergonomics, keeping design in the leading role
+          for the <span>search for satisfaction in people who interact with a system, product or environment.</span></p>
+        <p class="_info"><span>UI</span> - The <span>user interface design</span>
+          it is the result of defining the <span>form, function, utility, ergonomics, brand image</span>
+          and other aspects that affect the external appearance of interfaces in systems of all kinds.
+        </p>
+        <!-- <p class="_info"><span>UX</span> - 
           Se llama <span>experiencia de usuario,</span> por su enfoque, a la <span>relación sistema humano|máquina,</span> 
           y aparece como una evolución de la ergonomía, manteniendo al diseño en el papel protagónico
           para la <span>búsqueda de satisfacción en las personas que interactúan con un sistema, producto o entorno.</span></p>
         <p class="_info"><span>UI</span> - El <span>diseño de interfaz de usuario</span> 
           es el resultado de definir la <span>forma, función, utilidad, ergonomía, imagen de marca</span>
           y otros aspectos que afectan a la apariencia externa de las interfaces en sistemas de todo tipo.
-        </p>
+        </p> -->
       </div>
       <section class="_container_item" (click)="showMoreGraph()">
         <h2 class="_item" >
-          gráfico
+          graphic
         </h2>
       </section>
       <div class="_container_info" [hidden]="!visibleGraph">
@@ -92,11 +100,11 @@
         <div class="_show_more" (click)="showMoreDesigns()">
           <div class="_container_see_more" *ngIf="visibleDesigns">
             <mat-icon class="_icon_expand">expand_less</mat-icon>
-            <p class="_see_more">ver menos</p>
+            <p class="_see_more">ver less</p>
           </div>
           <div class="_container_see_more" *ngIf="!visibleDesigns">
             <mat-icon class="_icon_expand">expand_more</mat-icon>
-            <p class="_see_more">ver más</p>
+            <p class="_see_more">see more</p>
           </div>
         </div>
         <div [hidden]="!visibleDesigns">
@@ -120,24 +128,39 @@
           </figure>
         </div>
         <hr>
-        <p class="_info"><span>Diseño Gráfico </span> - Profesión y disciplina académica 
+        <!-- <p class="_info"><span>Diseño Gráfico </span> - Profesión y disciplina académica 
           cuya actividad consiste en <span>proyectar comunicación visual</span> destinada a 
           <span>transmitir mensajes</span> específicos a grupos sociales con <span>objetivos 
           determinados. Se aplica para producir un discurso de marca homogéneo generando 
           identidad visual</span> a personas, productos o servicios.
+        </p> -->
+        <p class="_info"><span>Graphic Design </span>
+          - Profession and academic discipline whose activity consists of 
+          <span>projecting visual communication</span> aimed at
+          <span>broadcast specific messages</span> to social groups with <span>targets
+          determined. It is applied to produce a homogeneous brand discourse generating
+          visual identity</span> to people, products or services.
         </p>
       </div>
       <section class="_container_item_disabled" (click)="showMoreIllustration()">
         <h2 class="_item_disabled" >
-         experimental
+         experimentation
         </h2>
       </section>
-      <p class="_item_disabled">en construcción</p>
+      <p class="_item_disabled">in progress</p>
       <div class="_container_info" [hidden]="!visibleIllustration">
-        <p class="_info">Se considera un <span>lenguaje gráfico universal,</span> 
-          ha sido utilizado por la humanidad para transmitir <span>ideas, proyectos</span> 
-          y en un sentido más amplio, sus <span>costumbres y cultura.</span>
+        <p class="_info">
+          The term experimentation, its application and its purpose were born in the <span>world of science.</span>
+          Experimentation is understood as <span>inquiry based on voluntary provocation</span>
+          of certain phenomena to confirm some hypothesis.
+          Experimentation is the <span>directed observation </span> that completes the <span> spontaneous observation.</span>
         </p>
+        <!-- <p class="_info">
+          El término experimentación, su aplicación y su finalidad nacen en el <span>mundo de la ciencia.</span> 
+          Por experimentación se entiende la <span>indagación fundada a partir de la provocación voluntaria </span>  
+          de ciertos fenómenos para confirmar alguna hipótesis. 
+          La experimentación es la <span>observación dirigida </span> que completa la <span> observación espontánea.</span>
+        </p> -->
         <div class="_container_button">
           <button class="_button_more" routerLink="illustration-sketch">
             <mat-icon class="_icon_button">work_outline</mat-icon>portafolio

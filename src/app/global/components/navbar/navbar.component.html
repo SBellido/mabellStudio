@@ -5,7 +5,8 @@
     <mat-button class="_button" id="design"
       [ngClass]="designActive ? '_active_button' : '_inactive_button'" 
       (click)="setButtonsStyle('design')">
-      <mat-icon class="_icon_nav">create</mat-icon>
+      <!-- <mat-icon class="_icon_nav">create</mat-icon> -->
+      <mat-icon class="_icon_nav">local_florist</mat-icon>
     </mat-button>
     <p class="_text_button _text_button_footer">designer</p>
   </div>
@@ -13,7 +14,8 @@
     <mat-button class="_button" id="development"
       [ngClass]="developmentActive ? '_active_button' : '_inactive_button'" 
       (click)="setButtonsStyle('development')">
-      <mat-icon class="_icon_nav">code</mat-icon>
+      <!-- <mat-icon class="_icon_nav">code</mat-icon> -->
+      <mat-icon class="_icon_nav">developer_mode</mat-icon>
     </mat-button>
     <p class="_text_button _text_button_footer">developer</p>
   </div>
@@ -44,11 +46,13 @@
     <mat-menu mat-button #menu="matMenu">  
       <mat-button class="_button_hamburguer" id="design"
         (click)="setButtonsStyle('design')" mat-menu-item>
-        <mat-icon class="_icon_nav_hamburguer">create</mat-icon><span>designer</span>
+        <!-- <mat-icon class="_icon_nav_hamburguer">create</mat-icon><span>designer</span> -->
+        <mat-icon class="_icon_nav_hamburguer">local_florist</mat-icon><span>designer</span>
       </mat-button>
       <mat-button class="_button_hamburguer" id="development"
         (click)="setButtonsStyle('development')" mat-menu-item>
-        <mat-icon class="_icon_nav_hamburguer">code</mat-icon><span>developer</span>
+        <!-- <mat-icon class="_icon_nav_hamburguer">code</mat-icon><span>developer</span> -->
+        <mat-icon class="_icon_nav_hamburguer">developer_mode</mat-icon><span>developer</span>
       </mat-button>
       <!-- <mat-button class="_button_hamburguer" id="intervention"
         (click)="setButtonsStyle('intervention')" mat-menu-item>
