@@ -38,57 +38,32 @@
     opacity: 80%;
     cursor: pointer;
   }
-
   ._container_button {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
+    margin: .5rem 0;
   }
-
-  // ._button:hover { 
-  //   background: $second_color_light;
-  // }
-  // ._active_button {
-  //   background: $third_color; 
-  // }
-  // ._inactive_button {
-  //   background: $second_color;
-  // }
-  // ._icon_nav {
-  //   color: $first_color;
-  //   margin-right: 0px !important;
-  //   padding: .7rem 0rem;
-  // }
-  // p._text_button {
-  //   font-size: .7rem;
-  //   color: $first_color;
-  //   margin-block-start: .5em;
-  //   margin-block-end: .5em;
-  // }
-  // section._container_buttons {
-  //   display: flex;
-  //   flex-direction: row;
-  //   justify-content: space-around;
-  //   background: $accent_color;
-  //   margin: 0rem 1rem;
-  // }
-  section._container_buttons {
+  section._container_contact {
+    margin-top: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 5rem;
+  }
+  .mat-menu-item {
+    padding: 0 .7rem;
+  }
+  div._container_buttons {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    position: sticky;
-    margin: 1rem;
-    padding: 0 3.5rem;
+    margin: 1rem 0;
+    padding: 0;
+    width: 100%;
   }
-  // ._button { 
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   cursor: pointer;
-  //   border-radius: 50px;  
-  //   padding: 0rem .7rem;
-  // }
   ._button { 
     display: flex;
     justify-content: center;
@@ -117,68 +92,25 @@
     margin-block-start: .5em;
     margin-block-end: .5em;
   }
-  // p._text_button {
-  //   font-size: .7rem;
-  //   color: $accent_color;
-  //   margin-block-start: .5em;
-  //   margin-block-end: .5em;
-  // }
+
   div._container_firm {
     margin: .5rem auto;
     width: 14rem;
     height: auto;
   }
-  div._container_buttons_contact {
+  ._contact_buttons { 
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-  }
-  a._btn_footer {
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    font-weight: 500;
+    cursor: pointer;
+    border-radius: 50px;  
+    padding: 0;
     background: linear-gradient(
       0deg, $first_color_lighter 5%, 
       $accent_color 100%
     );
-    color: $first_color;
-    padding: .7rem 5rem;
-    width: 100px;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
   }
-  a._btn_footer:hover {
-    background: linear-gradient(
-      0deg, $third_color_light 5%, 
-      $third_color_lighter 100%
-    );
-    color: $first_color;
-  }
-  img._btn_icon {
-    width: 1.7rem;
-    height: auto;
-    color: $first_color;
-    margin-right: .5rem;
-  }
-  div._container_divisor {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 80%;
-    margin: 1.5rem auto;
-    padding: 0rem 2rem;
-  }
-  hr {
-    width: 50%;
-    opacity: 50%;
-  }
-  p._o_divisor {
-    margin: 0rem 1.5rem;
-  }
+
   div._divisor_bottom {
     margin-top: 3rem;
   }
@@ -187,6 +119,7 @@
     color: $accent_color;
     padding: 0.8rem;
     text-align: center;
+    margin-top: 3rem;
   }
   p._copyright {
     font-weight: 300;

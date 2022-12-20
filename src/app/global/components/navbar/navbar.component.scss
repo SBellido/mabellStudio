@@ -4,6 +4,9 @@
 @media (min-width: 0px) { 
 
 /* ------------NAVBAR HAMBURGUER---------------*/
+hr._hr_hamburguer {
+  border: .2px solid $first_color_medium;
+}
 ::ng-deep .mat-toolbar.mat-primary {
     background: $first_color;
     position: fixed;

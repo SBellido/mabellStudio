@@ -1,9 +1,9 @@
 
 <!-- NAVBAR CIRCLE BUTONS -->
-<section class="_container_buttons">   
+<section class="_container_buttons">
   <div class="_container_button">
     <mat-button class="_button" id="design"
-      [ngClass]="designActive ? '_active_button' : '_inactive_button'" 
+      [ngClass]="designActive ? '_active_button' : '_inactive_button'"
       (click)="setButtonsStyle('design')">
       <!-- <mat-icon class="_icon_nav">create</mat-icon> -->
       <mat-icon class="_icon_nav">local_florist</mat-icon>
@@ -12,7 +12,7 @@
   </div>
   <div class="_container_button">
     <mat-button class="_button" id="development"
-      [ngClass]="developmentActive ? '_active_button' : '_inactive_button'" 
+      [ngClass]="developmentActive ? '_active_button' : '_inactive_button'"
       (click)="setButtonsStyle('development')">
       <!-- <mat-icon class="_icon_nav">code</mat-icon> -->
       <mat-icon class="_icon_nav">developer_mode</mat-icon>
@@ -21,7 +21,7 @@
   </div>
   <!-- <div class="_container_button">
     <mat-button class="_button" id="intervention"
-      [ngClass]="interventionActive ? '_active_button' : '_inactive_button'" 
+      [ngClass]="interventionActive ? '_active_button' : '_inactive_button'"
       (click)="setButtonsStyle('intervention')">
       <mat-icon class="_icon_nav">color_lens</mat-icon>
     </mat-button>
@@ -29,21 +29,36 @@
   </div> -->
   <div class="_container_button">
     <mat-button class="_button" id="biography"
-      [ngClass]="biographyActive ? '_active_button' : '_inactive_button'" 
+      [ngClass]="biographyActive ? '_active_button' : '_inactive_button'"
       (click)="setButtonsStyle('biography')">
       <mat-icon class="_icon_nav">fingerprint</mat-icon>
     </mat-button>
     <p class="_text_button _text_button_footer">profile</p>
   </div>
+
+
+  <!-- <div class="_container_button">
+    <a class="_btn_footer" target="_blank" href="https://api.whatsapp.com/send?phone=541121580848">
+      <mat-icon class="_icon_nav">fingerprint</mat-icon>
+      call me
+    </a>
+    <div class="_container_divisor">
+      <hr><p class="_o_divisor">or</p><hr>
+    </div>
+    <a class="_btn_footer" target="_blank" href="mailto:sebastianbellidodg@gmail.com">
+      <img class="_btn_icon" src="../../../../assets/images/footer/icon_email.svg" alt="icono de un sobre">
+      write me
+    </a>
+  </div> -->
 </section>
 
 <mat-toolbar color="primary" style="position: fixed;">
-  <mat-toolbar-row>        
+  <mat-toolbar-row>
     <mat-button mat-icon-mat-button [matMenuTriggerFor]="menu"
       (click)="setButtonsStyle('hamburguer')">
       <mat-icon class="_icon_hamburguer">menu</mat-icon>
     </mat-button>
-    <mat-menu mat-button #menu="matMenu">  
+    <mat-menu mat-button #menu="matMenu">
       <mat-button class="_button_hamburguer" id="design"
         (click)="setButtonsStyle('design')" mat-menu-item>
         <!-- <mat-icon class="_icon_nav_hamburguer">create</mat-icon><span>designer</span> -->
@@ -58,17 +73,28 @@
         (click)="setButtonsStyle('intervention')" mat-menu-item>
         <mat-icon class="_icon_nav_hamburguer">color_lens</mat-icon><span>intervención</span>
       </mat-button> -->
-      <mat-button class="_button_hamburguer" id="biography" 
+      <mat-button class="_button_hamburguer" id="biography"
         (click)="setButtonsStyle('biography')" mat-menu-item>
         <mat-icon class="_icon_nav_hamburguer">fingerprint</mat-icon><span>profile</span>
       </mat-button>
-    </mat-menu>
-    
-  
+      <hr class="_hr_hamburguer">
+      <mat-button class="_button_hamburguer" id="biography"
+        (click)="setButtonsStyle('biography')" mat-menu-item>
+        <mat-icon class="_icon_nav_hamburguer">perm_phone_msg</mat-icon><span>phone</span>
+      </mat-button>
+      <mat-button class="_button_hamburguer" id="biography"
+        (click)="setButtonsStyle('biography')" mat-menu-item>
+        <mat-icon class="_icon_nav_hamburguer">alternate_email</mat-icon><span>email</span>
+      </mat-button>
 
-    <div class="_container_logo" (click)="setButtonsStyle('home')">   
-      <img class="_logo_navbar" src="../assets/images/logo_sb_navbar.svg" 
-      alt="Firma de Sebastián Bellido">      
+
+    </mat-menu>
+
+
+
+    <div class="_container_logo" (click)="setButtonsStyle('home')">
+      <img class="_logo_navbar" src="../assets/images/logo_sb_navbar.svg"
+      alt="Firma de Sebastián Bellido">
     </div>
 
     <div class="_empty"></div>
@@ -76,10 +102,10 @@
 </mat-toolbar>
 
 <!-- <div id="logo" class="_container_logo" (click)="setButtonsStyle('home')">
-  <img class="_logo_navbar" src="../assets/images/sb/logo_sb.svg" 
+  <img class="_logo_navbar" src="../assets/images/sb/logo_sb.svg"
   alt="Firma de Sebastián Bellido con dibujo de un ojo-pez-volador">
 </div> -->
 <!-- <figure class="_firma">
-  <img class="_firma_home" (click)="setButtonsStyle('home')" src="..\assets\images\logo_sb_navbar.svg" 
+  <img class="_firma_home" (click)="setButtonsStyle('home')" src="..\assets\images\logo_sb_navbar.svg"
   alt="Firma de Sebastián Bellido con dibujo de un ojo-pez-volador">
 </figure> -->

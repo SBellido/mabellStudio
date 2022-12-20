@@ -1,4 +1,5 @@
 <article class="_container_footer">
+
   <section class="_header_footer">
     <div class="_divisor_top"></div>
     <div class="_container_ornament">
@@ -52,19 +53,10 @@
         <mat-button class="_button" id="development"
           [ngClass]="developmentActive ? '_active_button' : '_inactive_button'" 
           (click)="setButtonsStyle('development')">
-          <!-- <mat-icon class="_icon_nav">code</mat-icon> -->
           <mat-icon class="_icon_nav">developer_mode</mat-icon>
         </mat-button>
         <p class="_text_button _text_button_footer">developer</p>
       </div>
-      <!-- <div class="_container_button">
-        <mat-button class="_button" id="intervention"
-          [ngClass]="interventionActive ? '_active_button' : '_inactive_button'" 
-          (click)="setButtonsStyle('intervention')">
-          <mat-icon class="_icon_nav">color_lens</mat-icon>
-        </mat-button>
-        <p class="_text_button _text_button_footer">intervención</p>
-      </div> -->
       <div class="_container_button">
         <mat-button class="_button" id="biography"
           [ngClass]="biographyActive ? '_active_button' : '_inactive_button'" 
@@ -79,23 +71,24 @@
     </div>  
   </section>
 
-  <section class="_footer">
-    <div class="_container_buttons_contact">
-      <a class="_btn_footer" target="_blank" href="https://api.whatsapp.com/send?phone=541121580848">
-        <img class="_btn_icon" src="../../../../assets/images/footer/logo_whatsapp.svg" alt="logo de whatsapp">
-        call me
-      </a>
-      <div class="_container_divisor">
-        <hr><p class="_o_divisor">or</p><hr>
+  <section class="_container_contact">     
+    <div class="_container_buttons">
+      <div class="_contact_buttons">  
+        <mat-button class="_button_contact" id="icon_email" mat-menu-item>
+          <mat-icon class="_icon_nav">alternate_email</mat-icon>
+        </mat-button>
       </div>
-      <a class="_btn_footer" target="_blank" href="mailto:sebastianbellidodg@gmail.com">
-        <img class="_btn_icon" src="../../../../assets/images/footer/icon_email.svg" alt="icono de un sobre">
-        write me
-      </a>
+      <div class="_contact_buttons">  
+        <mat-button class="_button_contact" id="phone" mat-menu-item>
+          <mat-icon class="_icon_nav">perm_phone_msg</mat-icon>
+        </mat-button>
+      </div>
     </div>
-    <div class="_divisor_bottom"></div>
-    <div class="_footer_bottom">
-      <p class="_copyright"><span>@Copyright</span> | All rights reserved to <span>Sebastián Bellido.</span></p>
-    </div>
+    <p class="message">Write me or Call me!</p>
   </section>
+
+  <div class="_footer_bottom">
+    <p class="_copyright"><span>@Copyright</span> | All rights reserved to <span>Sebastián Bellido.</span></p>
+  </div>
+
 </article> 
