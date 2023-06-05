@@ -129,10 +129,7 @@ hr._hr_hamburguer {
     );
   }
   ._inactive_button {
-    background: radial-gradient(
-      circle, $second_color_lighter 9%, 
-      $second_color 100%
-    );
+    background: $second_color;
   }
   ._icon_nav {
     color: $first_color;

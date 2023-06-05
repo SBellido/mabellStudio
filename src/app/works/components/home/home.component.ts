@@ -39,13 +39,12 @@ export class HomeComponent implements OnInit {
   //   '#a5a5a5','#888888','#b9b9b9'
   // ]; 
   colorFont: string[] = [
-    '#9b9b9b','#7f7f7f','#171717',
-    '#bbbbbb','#afafaf','#7e7e7e',
-    '#a5a5a5','#888888','#b9b9b9',
-    '#03caff','#03caff','#7AE3FF',
-    '#f9f9f9','#f9f9f9','#FFDD57',
-    '#f8cbf6','#f8cbf6','#f89af3',
-    '#FFEB9B','#8F57FF','#C5A9FE'
+    '#e2e2e2','#c7c7c7','#cccccc',
+    '#862ADC','#a67fcb','#F71490',
+    '#beb6c6','#b1ff57','#F71490',
+    '#f479bd','#ecc9dc','#f89af3',
+    '#f8cbf6','#7AF800','#862ADC',
+    '#f8cbf6','#f8cbf6','#C5A9FE'
   ]; 
   fontStyle: string[] = [
     'oblique', 'italic','normal'
