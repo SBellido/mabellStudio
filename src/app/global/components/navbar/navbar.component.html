@@ -5,7 +5,6 @@
     <mat-button class="_button" id="design"
       [ngClass]="designActive ? '_active_button' : '_inactive_button'"
       (click)="setButtonsStyle('design')">
-      <!-- <mat-icon class="_icon_nav">create</mat-icon> -->
       <mat-icon class="_icon_nav">local_florist</mat-icon>
     </mat-button>
     <p class="_text_button _text_button_footer">designing</p>
@@ -14,19 +13,10 @@
     <mat-button class="_button" id="development"
       [ngClass]="developmentActive ? '_active_button' : '_inactive_button'"
       (click)="setButtonsStyle('development')">
-      <!-- <mat-icon class="_icon_nav">code</mat-icon> -->
       <mat-icon class="_icon_nav">developer_mode</mat-icon>
     </mat-button>
     <p class="_text_button _text_button_footer">developing</p>
   </div>
-  <!-- <div class="_container_button">
-    <mat-button class="_button" id="intervention"
-      [ngClass]="interventionActive ? '_active_button' : '_inactive_button'"
-      (click)="setButtonsStyle('intervention')">
-      <mat-icon class="_icon_nav">color_lens</mat-icon>
-    </mat-button>
-    <p class="_text_button _text_button_footer">intervención</p>
-  </div> -->
   <div class="_container_button">
     <mat-button class="_button" id="biography"
       [ngClass]="biographyActive ? '_active_button' : '_inactive_button'"
@@ -59,26 +49,6 @@
       <mat-icon class="_icon_hamburguer">menu</mat-icon>
     </mat-button>
     <mat-menu mat-button #menu="matMenu">
-      <mat-button class="_button_hamburguer" id="design"
-        (click)="setButtonsStyle('design')" mat-menu-item>
-        <!-- <mat-icon class="_icon_nav_hamburguer">create</mat-icon><span>designer</span> -->
-        <mat-icon class="_icon_nav_hamburguer">local_florist</mat-icon><span>designing
-        </span>
-      </mat-button>
-      <mat-button class="_button_hamburguer" id="development"
-        (click)="setButtonsStyle('development')" mat-menu-item>
-        <!-- <mat-icon class="_icon_nav_hamburguer">code</mat-icon><span>developer</span> -->
-        <mat-icon class="_icon_nav_hamburguer">developer_mode</mat-icon><span>developing</span>
-      </mat-button>
-      <!-- <mat-button class="_button_hamburguer" id="intervention"
-        (click)="setButtonsStyle('intervention')" mat-menu-item>
-        <mat-icon class="_icon_nav_hamburguer">color_lens</mat-icon><span>intervención</span>
-      </mat-button> -->
-      <mat-button class="_button_hamburguer" id="biography"
-        (click)="setButtonsStyle('biography')" mat-menu-item>
-        <mat-icon class="_icon_nav_hamburguer">album</mat-icon><span>marketing</span>
-      </mat-button>
-      <hr class="_hr_hamburguer">
       <mat-button class="_button_hamburguer" id="biography"
         (click)="setButtonsStyle('biography')" mat-menu-item>
         <mat-icon class="_icon_nav_hamburguer">perm_phone_msg</mat-icon><span>call us</span>
@@ -87,26 +57,29 @@
         (click)="setButtonsStyle('biography')" mat-menu-item>
         <mat-icon class="_icon_nav_hamburguer">alternate_email</mat-icon><span>write us</span>
       </mat-button>
-
-
+      <hr class="_hr_hamburguer">
+      <mat-button class="_button_hamburguer" id="design"
+        (click)="setButtonsStyle('design')" mat-menu-item>
+        <mat-icon class="_icon_nav_hamburguer">local_florist</mat-icon><span>designing
+        </span>
+      </mat-button>
+      <mat-button class="_button_hamburguer" id="development"
+        (click)="setButtonsStyle('development')" mat-menu-item>
+        <mat-icon class="_icon_nav_hamburguer">developer_mode</mat-icon><span>developing</span>
+      </mat-button>
+      <mat-button class="_button_hamburguer" id="biography"
+        (click)="setButtonsStyle('biography')" mat-menu-item>
+        <mat-icon class="_icon_nav_hamburguer">album</mat-icon><span>marketing</span>
+      </mat-button>     
     </mat-menu>
 
 
 
     <div class="_container_logo" (click)="setButtonsStyle('home')">
-      <img class="_logo_navbar" src="../assets/images/logo_sb_navbar.svg"
+      <img class="_logo_navbar" src="../assets/images/sb/mabell_isologo_.png"
       alt="Logo de mabellStudio">
     </div>
 
     <div class="_empty"></div>
   </mat-toolbar-row>
 </mat-toolbar>
-
-<!-- <div id="logo" class="_container_logo" (click)="setButtonsStyle('home')">
-  <img class="_logo_navbar" src="../assets/images/sb/logo_sb.svg"
-  alt="Firma de Sebastián Bellido con dibujo de un ojo-pez-volador">
-</div> -->
-<!-- <figure class="_firma">
-  <img class="_firma_home" (click)="setButtonsStyle('home')" src="..\assets\images\logo_sb_navbar.svg"
-  alt="Firma de Sebastián Bellido con dibujo de un ojo-pez-volador">
-</figure> -->

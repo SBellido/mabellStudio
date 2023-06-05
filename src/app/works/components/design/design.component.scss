@@ -81,7 +81,7 @@
     font-weight: 500;
   }
   h2._item {
-    color: $first_color;
+    color: $third_color;
   }
   h2._item_disabled {
     color: $first_color_light;
@@ -93,16 +93,19 @@
   }
   h2._item {
     margin: 0;
-    color: $first_color;
+    color: $fifth_color;
     font-size: 1.3rem;
     font-weight: 500;
   }
   span {
     font-weight: 800;
   }
+  img._img_item {
+    width: 100%;
+  }
   p._info {
     font-size: .9rem;
-    color: $first_color;
+    color: $accent_color;
     line-height : 1.3rem;
   }
   div._container_button {
