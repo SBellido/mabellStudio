@@ -2,9 +2,6 @@
   <section class="_container">
     <div class="_container_title">
       <hr class="_line_title"><h1 class="_title">design</h1><hr class="_line_title">
-      <!-- <mat-icon>keyboard_arrow_down</mat-icon> -->
-      <!-- <mat-icon>arrow_drop_down</mat-icon> -->
-      
     </div>
     <div class="_container_cards">
       <section class="_container_item" (click)="showMoreUxUi()">
@@ -13,11 +10,31 @@
         </h2>
       </section>
       <div class="_container_info" [hidden]="!visibleUxUi">
-        <div class="_container_button">
+        <!-- <div class="_container_button">
           <button class="_button_more" routerLink="ux-ui">
             <mat-icon class="_icon_button">work_outline</mat-icon>portafolio
           </button>
+        </div> -->
+
+        <p class="_info">
+          <span>UX/UI</span> is the design of the <span>user experience, and interface 
+        of a digital product.</span> It combines aspects such as <span>research, 
+        testing, development, content and prototyping to create solutions</span> 
+        that meet the needs and expectations of users. It also designs the 
+        <span>visual and interactive elements</span> that facilitate and enrich the 
+        navigation and use of the product.
+        </p>
+        <div class="_container_image">
+          <img class="_img_item" src="../../../../assets/images/ux_ui/ux_ui.jpeg" alt="">
         </div>
+        <!-- <p class="_info"><span>UX</span> - 
+          It is called <span>user experience,</span> due to its approach, to the <span>human system|machine relationship,</span>
+          and appears as an evolution of ergonomics, keeping design in the leading role
+          for the <span>search for satisfaction in people who interact with a system, product or environment.</span></p>
+        <p class="_info"><span>UI</span> - The <span>user interface design</span>
+          it is the result of defining the <span>form, function, utility, ergonomics, brand image</span>
+          and other aspects that affect the external appearance of interfaces in systems of all kinds.
+        </p> -->
         <figure class="_container_realizations">
           <div class="_container_realization" (click)="routingVlife()">
             <img class="_logo_realization" src="../assets/images/ux_ui/v-life/logo/v_life_isologo.png" alt="Logo de V-Life">
@@ -36,14 +53,7 @@
             <p class="_name_realization">hunt</p>
           </div>   
         </figure><hr>
-        <p class="_info"><span>UX</span> - 
-          It is called <span>user experience,</span> due to its approach, to the <span>human system|machine relationship,</span>
-          and appears as an evolution of ergonomics, keeping design in the leading role
-          for the <span>search for satisfaction in people who interact with a system, product or environment.</span></p>
-        <p class="_info"><span>UI</span> - The <span>user interface design</span>
-          it is the result of defining the <span>form, function, utility, ergonomics, brand image</span>
-          and other aspects that affect the external appearance of interfaces in systems of all kinds.
-        </p>
+        
         <!-- <p class="_info"><span>UX</span> - 
           Se llama <span>experiencia de usuario,</span> por su enfoque, a la <span>relación sistema humano|máquina,</span> 
           y aparece como una evolución de la ergonomía, manteniendo al diseño en el papel protagónico
