@@ -8,11 +8,10 @@
     height: auto;
     background: $third_color_lighter 100%;
   }
-  div._divisor_bottom,
-  div._divisor_top {
-    background-color: $third_color;
+  div._divisor_bottom {
+    background-color: $second_color;
     width: 100%;
-    height: .5rem;
+    height: .2rem;
   }
   div._container_ornament {
     display: flex;
@@ -22,7 +21,8 @@
   section._container_social_networks {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+    padding: 0 2rem;
   }
   div._container_logo_socialnet {
     width: 2.5rem;
