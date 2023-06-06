@@ -13,7 +13,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    padding: 2rem .5rem 0rem .5rem;
+    padding: 1.2rem .5rem 0rem .5rem;
   }
   hr._line_title {
     width: 30%;
@@ -212,7 +212,7 @@
 @media (min-width: 375px) { 
 
   div._container_cards {
-    padding: 3rem;
+    padding: 0;
   }
 
 }
