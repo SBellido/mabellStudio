@@ -50,7 +50,7 @@ import { HuntComponent } from './components/design/components/ux-ui/components/h
     VLifeComponent,
     TravelLogComponent,
     NightComponent,
-    HuntComponent
+    HuntComponent,
   ],
   imports: [
     CommonModule,
