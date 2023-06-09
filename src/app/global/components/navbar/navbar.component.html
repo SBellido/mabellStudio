@@ -5,7 +5,9 @@
     <mat-button class="_button" id="design"
       [ngClass]="designActive ? '_active_button' : '_inactive_button'"
       (click)="setButtonsStyle('design')">
-      <mat-icon class="_icon_nav">local_florist</mat-icon>
+      <mat-icon class="_icon_nav"
+        [ngClass]="designActive ? '_active_icon' : '_inactive_icon'">local_florist
+      </mat-icon>
     </mat-button>
     <p class="_text_button _text_button_footer">designing</p>
   </div>
@@ -13,7 +15,9 @@
     <mat-button class="_button" id="development"
       [ngClass]="developmentActive ? '_active_button' : '_inactive_button'"
       (click)="setButtonsStyle('development')">
-      <mat-icon class="_icon_nav">developer_mode</mat-icon>
+      <mat-icon class="_icon_nav" 
+        [ngClass]="developmentActive ? '_active_icon' : '_inactive_icon'">developer_mode
+      </mat-icon>
     </mat-button>
     <p class="_text_button _text_button_footer">developing</p>
   </div>
@@ -21,7 +25,9 @@
     <mat-button class="_button" id="biography"
       [ngClass]="biographyActive ? '_active_button' : '_inactive_button'"
       (click)="setButtonsStyle('biography')">
-      <mat-icon class="_icon_nav">album</mat-icon>
+      <mat-icon class="_icon_nav"
+        [ngClass]="biographyActive ? '_active_icon' : '_inactive_icon'">album
+      </mat-icon>
     </mat-button>
     <p class="_text_button _text_button_footer">marketing</p>
   </div>
@@ -73,9 +79,12 @@
       </mat-button>     
     </mat-menu>
 
+    <div class="_container_logo_desktop" (click)="setButtonsStyle('home')">
+      <img class="_logo_navbar" src="../assets/images/sb/mabell_logo_final.png"
+      alt="Logo de mabellStudio">
+    </div>
 
-
-    <div class="_container_logo" (click)="setButtonsStyle('home')">
+    <div class="_container_logo_mobile" (click)="setButtonsStyle('home')">
       <img class="_logo_navbar" src="../assets/images/sb/mabell_isologo_.png"
       alt="Logo de mabellStudio">
     </div>

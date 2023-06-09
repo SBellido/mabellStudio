@@ -3,6 +3,13 @@
 /* SCREEN 0px*/
 @media (min-width: 0px) { 
 
+  ._container_logo_desktop {
+    display: none;
+  }
+  ._container_logo_mobile {
+    display: flex;
+    justify-content: center;
+  }
 /* ------------NAVBAR HAMBURGUER---------------*/
 hr._hr_hamburguer {
   border: .2px solid $first_color_medium;
@@ -89,7 +96,6 @@ hr._hr_hamburguer {
   }
 
   /* ------------NAVBAR CIRCLE BUTTONS---------------*/
-  
   img._logo_navbar {
     cursor: pointer;
     padding: 0rem;
@@ -122,17 +128,26 @@ hr._hr_hamburguer {
     padding: 0rem .4rem;
   }
   ._active_button {
-    background: $third_color; 
-    background: radial-gradient(
-      circle, $third_color_lighter 3%, 
-      $third_color 100%
-    );
+    background: $second_color; 
+    cursor:default;  
+  }
+  ._button:hover { 
+    background: $second_color_light;
+  }
+  ._active_button:hover {
+    background: $second_color; 
+    cursor:default;  
   }
   ._inactive_button {
-    background: $second_color;
+    background: $third_color;
+  }
+  ._inactive_icon {
+    color: $first_color;
+  }
+  ._active_icon {
+    color: $fifth_color;
   }
   ._icon_nav {
-    color: $first_color;
     margin-right: 0px !important;
     padding: .4rem 0rem;
   }
@@ -147,7 +162,15 @@ hr._hr_hamburguer {
 
 /* SCREEN 490px */
 @media (min-width: 490px) { 
-
+  ._container_logo_desktop {   
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+  ._icon_hamburguer,
+  ._container_logo_mobile {
+    display: none;
+  }
   section._container_buttons {
     justify-content: center;
   }
@@ -157,9 +180,7 @@ hr._hr_hamburguer {
   ._conteiner_button {
     margin: 1rem 3rem 0 3rem;
   }
-  ._button:hover { 
-    background: $second_color_light;
-  }
+
 
 }
 
