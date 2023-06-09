@@ -145,52 +145,21 @@ hr._hr_hamburguer {
   
 }
 
-// /* SCREEN 414px */
-// @media (min-width: 414px) { 
-
-//   section._container_buttons {
-//     padding-top: 4.5rem;
-//   }
-
-// }
-
-
-// /* SCREEN 768px */
-// @media (min-width: 768px) { 
-
-//   section._container_buttons {
-//     padding: 5rem auto 2rem auto;
-//   }
-
-// }
-
-/* SCREEN 1024px */
-@media (min-width: 1024px) { 
+/* SCREEN 490px */
+@media (min-width: 490px) { 
 
   section._container_buttons {
-    padding: 7rem 13rem;
+    justify-content: center;
+  }
+  div._container_button {
+    margin: 1rem 3rem 0 3rem;
+  }
+  ._conteiner_button {
+    margin: 1rem 3rem 0 3rem;
   }
   ._button:hover { 
     background: $second_color_light;
   }
 
 }
-
-// /* SCREEN 1336px */
-// @media (min-width: 1336px) { 
-
-//   section._container_buttons {
-//     padding: 7rem auto 2rem auto;
-//   }
-
-// }
-
-// /* SCREEN 1920px */
-// @media (min-width: 1920px) { 
-
-//   section._container_buttons {
-//     padding: 7rem auto 2rem auto;
-//   }
-
-// }
 
