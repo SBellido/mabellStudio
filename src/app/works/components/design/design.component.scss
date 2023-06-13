@@ -213,9 +213,20 @@
 /* SCREEN 768px */
 @media (min-width: 768px) { 
 
-
+  div._container_cards {
+    flex-direction: row;
+  }
+  div._container_info {
+    width: 30vw;
+  }
   ._container_item {
-    width: 50vw;
+    padding: 10px;
+    width: 27vw;
+  }
+  section._container_all_info {
+    display: flex;
+    flex-direction: column;
+    width: 33vw;
   }
 
 }

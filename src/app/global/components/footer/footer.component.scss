@@ -3,6 +3,17 @@
 /* SCREEN 0px */
 @media (min-width: 0px) { 
 
+  div._container_logo_mobile {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 0 auto;
+  }
+  img._logo_mobile {
+    width: 10rem;
+  }
+  div._container_logo_desktop {
+    display: none;
+  }
   section._header_footer {
     height: auto;
   }
@@ -15,11 +26,6 @@
     background-color: $second_color;
     width: 100%;
     height: .2rem;
-  }
-  div._container_logo {
-    display: flex;
-    justify-content: center;
-    margin: 3rem auto 0 auto;
   }
   section._container_social_networks {
     display: flex;
@@ -63,13 +69,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center; 
+    margin: 0 1.3rem;
   }
   section._container_contact {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 0 8rem;
+    padding: 0 6rem;
     margin-bottom: 3rem;
   }
   .mat-menu-item {
@@ -124,7 +131,12 @@
     cursor: pointer;
     border-radius: 50px;  
     padding: 0;
-    background: $second_color 100%;
+    box-shadow: 0px 0px 4px 0px #8e8e8e; 
+
+    background: linear-gradient(
+      0deg, $third_color 33%, 
+      $third_color_light 100%
+    );
   }
 
   div._divisor_bottom {
@@ -135,7 +147,7 @@
     color: $accent_color;
     padding: 0.8rem;
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 5rem;
     -webkit-box-shadow: 0px -2px 6px 0px rgba(134,42,128,0.3);
     -moz-box-shadow: 0px -2px 6px 0px rgba(134,42,128,0.3);
     box-shadow: 0px -2px 6px 0px rgba(134,42,128,0.3);
@@ -150,6 +162,38 @@
   a:-webkit-any-link {
     text-decoration: none;
   }
+
+}
+
+/* SCREEN 490px */
+@media (min-width: 490px) { 
+
+  div._container_logo_mobile {
+    display: none; 
+  }
+  div._container_logo_desktop {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 0 auto;
+  }
+  img._logo_desktop {
+    width: 10rem;
+  }
+  section._container_contact {
+    padding: 0 11rem;
+  }
+  div._container_logo_socialnet {
+    margin: 1rem .5rem;
+  }
+
+}
+
+/* SCREEN 768px */
+@media (min-width: 768px) { 
+
+  img._logo_footer {
+    width: 50%;
+  } 
 
 }
 
