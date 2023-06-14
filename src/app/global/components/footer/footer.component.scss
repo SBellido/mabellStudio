@@ -6,7 +6,7 @@
   div._container_logo_mobile {
     display: flex;
     justify-content: center;
-    margin: 0 auto 0 auto;
+    margin: 0 auto 3.5rem auto;
   }
   img._logo_mobile {
     width: 10rem;
@@ -132,7 +132,6 @@
     border-radius: 50px;  
     padding: 0;
     box-shadow: 0px 0px 4px 0px #8e8e8e; 
-
     background: linear-gradient(
       0deg, $third_color 33%, 
       $third_color_light 100%
@@ -161,6 +160,18 @@
   }
   a:-webkit-any-link {
     text-decoration: none;
+  }
+  div._footer_bottom {
+    margin-top: 9rem;
+  }
+
+}
+
+/* SCREEN 375px */
+@media (min-width: 0px) {
+  
+  div._container_logo_mobile {
+    margin: 0 auto 5rem auto;
   }
 
 }
@@ -194,6 +205,12 @@
   img._logo_footer {
     width: 50%;
   } 
+  section._container_contact {
+    padding: 0 16rem;
+  }
+  div._footer_bottom {
+    margin-top: 12.3rem;
+  }
 
 }
 
@@ -202,6 +219,9 @@
 
   section._container_buttons {
     padding: 7rem 13rem;
+  }
+  section._container_contact {
+    padding: 0 25rem;
   }
   ._button:hover { 
     background: $second_color_light;
@@ -217,4 +237,26 @@
   button._btn_footer:hover {
     background: $third_color_light;
   }
+
+}
+
+/* SCREEN 1440px */
+@media (min-width: 1440px) {
+
+  section._container_contact {
+    padding: 2rem 39rem;
+  }
+  div._footer_bottom {
+    margin-top: 12rem
+  }
+
+}
+
+/* SCREEN 2559px */
+@media (min-width: 2559px) {
+
+  section._container_contact {
+    padding: 2rem 72rem;
+  }
+
 }
