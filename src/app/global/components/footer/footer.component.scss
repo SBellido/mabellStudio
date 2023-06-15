@@ -85,7 +85,7 @@
   div._container_buttons {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0 0 1 0;
     padding: 0;
     width: 100%;
@@ -209,7 +209,7 @@
     padding: 0 16rem;
   }
   div._footer_bottom {
-    margin-top: 12.3rem;
+    margin-top: 10.3rem;
   }
 
 }
@@ -255,6 +255,9 @@
 /* SCREEN 1920px */
 @media (min-width: 1920px) {
 
+  section._container_buttons {
+    justify-content: space-around;
+  }
   div._footer_bottom {
     margin-top: 10.3rem;
   }
