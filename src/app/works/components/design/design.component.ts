@@ -49,16 +49,6 @@ export class DesignComponent implements OnInit {
     this.topFunction();
   }
 
-  // toggleText(card: Card): void {
-  //   card.showFullText = !card.showFullText;
-  // }
-
-  // truncateText(text: string, maxLength: number): string {
-  //   if (text.length > maxLength) {
-  //     return text.slice(0, maxLength) + '...';
-  //   }
-  //   return text;
-  // }
   toggleText(card: Card): void {
     card.showFullText = !card.showFullText;
     card.truncatedText = this.truncateText(card.text, 150);
