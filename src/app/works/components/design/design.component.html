@@ -4,6 +4,105 @@
       <mat-icon class="_icon_nav">local_florist</mat-icon>
       <h1 class="_title">designing</h1>
     </div>
+    <div *ngFor="let card of cards">
+      <div class="_card">
+        <h4 class="_card_title">{{ card.tittle }}</h4>
+        <p class="_text_card">
+          <ng-container *ngIf="card.showFullText; else truncatedText">
+            {{ card.text }}
+          </ng-container>
+          <ng-template #truncatedText>
+            {{ card.text.length > 150 ? (card.text.slice(0, 150) + '...') : card.text }}
+          </ng-template>
+          <span *ngIf="card.text.length > 150">
+            <a class="_see_more" (click)="toggleText(card)">
+              {{ card.showFullText ? 'Ver menos' : 'Ver más' }}
+            </a>
+          </span>
+        </p>
+        <!-- <p class="_text_card" [innerHTML]="card.showFullText ? card.text : card.truncatedText">
+          <span *ngIf="card.text.length > 150">
+            <a class="_see_more" (click)="toggleText(card)">
+              {{ card.showFullText ? 'Ver menos' : 'Ver más' }}
+            </a>
+          </span>
+        </p> -->
+        <!-- <p class="_text_card" [innerHTML]="card.text | highlight:card.wordsToHighlight">
+          {{ card.showFullText ? card.text : (card.text.length > 150 ? (card.text.slice(0, 150) + '...') : card.text) }}
+          <span *ngIf="card.text.length > 150">
+            <a class="_see_more" (click)="toggleText(card)">
+              {{ card.showFullText ? 'Ver menos' : 'Ver más' }}
+            </a>
+          </span>
+        </p> -->
+      </div>
+      <img class="_card_img" [src]="card.image" alt="Imagen">
+    </div>
+<!-- <div class="_container_cards">
+  <div class="_card" style="width: 18rem;">
+    <div class="_card_body">
+      <h4 class="_card_title">Graphic Design</h4>
+    
+      <p class="_card_text">
+        Graphic design is a creative and communicative discipline that is responsible 
+        for creating and combining visual elements, such as images, colors, typographies 
+        and shapes, to convey clear and effective messages. Its main objective is to 
+        communicate visually, through attractive and functional designs, either in print or digital media.
+        Graphic design covers various areas, such as corporate identity, logo design, 
+        editorial layout, web design and advertising, among others. Its application is 
+        present in a wide variety of fields, from the business and advertising field to 
+        the artistic and cultural.
+      </p>
+      <button class="_consult">
+        <mat-icon class="_icon_contact">chat_bubble_outline</mat-icon>
+        Consult!
+      </button>    
+    </div>
+    <img src="../../../../assets/images/works/DG.png" class="_card_img" alt="un escritorio con lápices, un ordenador y una tablet">
+  </div>
+  <div class="_card" style="width: 18rem;">
+    <img src="../../../../assets/images/works/DG.png" class="_card_img" alt="un escritorio con lápices, un ordenador y una tablet">
+    <div class="_card_body">
+      <h4 class="_card_title">UX | UI</h4>
+      <p class="_card_text">
+        Graphic design is a creative and communicative discipline that is responsible 
+        for creating and combining visual elements, such as images, colors, typographies 
+        and shapes, to convey clear and effective messages. Its main objective is to 
+        communicate visually, through attractive and functional designs, either in print or digital media.
+        Graphic design covers various areas, such as corporate identity, logo design, 
+        editorial layout, web design and advertising, among others. Its application is 
+        present in a wide variety of fields, from the business and advertising field to 
+        the artistic and cultural.
+      </p>
+      <p class="_card_text">
+        El diseño UX/UI (Experiencia de Usuario/Interfaz de Usuario) es una disciplina 
+        que se enfoca en crear experiencias digitales agradables, intuitivas y satisfactorias 
+        para los usuarios. El diseño UX se centra en comprender las necesidades, expectativas 
+        y comportamientos de los usuarios, así como en optimizar la usabilidad y la facilidad 
+        de uso de un producto o servicio digital. Por otro lado, el diseño UI se refiere a la 
+        apariencia visual y la interacción de los elementos en la interfaz, incluyendo el 
+        diseño de botones, iconos, tipografías y esquemas de color. El objetivo del diseño 
+        UX/UI es lograr que los usuarios puedan interactuar de manera eficiente y placentera 
+        con un producto digital, asegurando que cumpla con sus objetivos y les brinde una 
+        experiencia positiva y satisfactoria.
+      </p> 
+      <a href="#" class="_btn_card">Go somewhere</a>
+    </div>
+  </div>
+  <div class="_card" style="width: 18rem;">
+    <img src="../../../../assets/images/works/DG.png" class="_card_img" alt="un escritorio con lápices, un ordenador y una tablet">
+    <div class="_card_body">
+      <h5 class="_card_title">Diseño Gráfico</h5>
+      <p class="_card_text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="_btn_card">Go somewhere</a>
+    </div>
+  </div>
+
+</div> -->
+    <!-- <div class="_container_title">
+      <mat-icon class="_icon_nav">local_florist</mat-icon>
+      <h1 class="_title">designing</h1>
+    </div>
     <div class="_container_cards">
       <section class="_container_item" (click)="showMoreUxUi()">
         <h2 class="_item" >
@@ -82,7 +181,7 @@
 
         </figure>
       </div>
-    </div>
+    </div> -->
     <app-footer class="_footer"></app-footer>
   </section>
 </article>

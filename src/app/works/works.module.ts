@@ -30,6 +30,7 @@ import { VLifeComponent } from './components/design/components/ux-ui/components/
 import { TravelLogComponent } from './components/design/components/ux-ui/components/travel-log/travel-log.component';
 import { NightComponent } from './components/design/components/ux-ui/components/night/night.component';
 import { HuntComponent } from './components/design/components/ux-ui/components/hunt/hunt.component';
+import { HighlightPipe } from '../pipes/highlight.pipe';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { HuntComponent } from './components/design/components/ux-ui/components/h
     TravelLogComponent,
     NightComponent,
     HuntComponent,
+    HighlightPipe
   ],
   imports: [
     CommonModule,
@@ -62,7 +64,7 @@ import { HuntComponent } from './components/design/components/ux-ui/components/h
     MDBBootstrapModule,
     CarouselModule, 
     ModalModule, 
-    WavesModule 
+    WavesModule
   ]
 })
 export class WorksModule { }
