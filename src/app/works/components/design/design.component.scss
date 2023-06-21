@@ -33,7 +33,7 @@ div._card {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: .7rem;
+  padding: 1rem;
   background-color: white;
   margin: 1rem 1rem 0 1rem;
   border-radius: 25px 25px 0 0;
@@ -41,6 +41,8 @@ div._card {
 }
 p._text_card {
   color: $second_color_dark;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
 }
 div._container_img {
   display: flex;

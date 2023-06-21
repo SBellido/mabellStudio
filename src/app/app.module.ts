@@ -7,12 +7,13 @@ import { ErrorFourZeroFourComponent } from './errors/error-four-zero-four/error-
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GalleryService } from './services/gallery.services';
-
+import { HighlightPipe } from './pipes/highlight.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ErrorFourZeroFourComponent
+    ErrorFourZeroFourComponent,
+    HighlightPipe
   ],
   imports: [
     BrowserModule,
