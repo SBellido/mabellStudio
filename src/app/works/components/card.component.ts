@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Card } from '../../models/models';
 
 @Component({
@@ -7,7 +7,8 @@ import { Card } from '../../models/models';
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent implements OnInit {
-
+  @Input() area: string | undefined; 
+  
   cards: Card[] = [
     {
       id: 1,

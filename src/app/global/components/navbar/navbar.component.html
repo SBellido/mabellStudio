@@ -1,16 +1,7 @@
 
 <!-- NAVBAR CIRCLE BUTONS -->
 <section class="_container_buttons">
-  <div class="_container_button">
-    <mat-button class="_button" id="design"
-      [ngClass]="designActive ? '_active_button' : '_inactive_button'"
-      (click)="setButtonsStyle('design')">
-      <mat-icon class="_icon_nav"
-        [ngClass]="designActive ? '_active_icon' : '_inactive_icon'">local_florist
-      </mat-icon>
-    </mat-button>
-    <p class="_text_button _text_button_footer">design</p>
-  </div>
+ 
   <div class="_container_button">
     <mat-button class="_button" id="development"
       [ngClass]="developmentActive ? '_active_button' : '_inactive_button'"
@@ -20,6 +11,16 @@
       </mat-icon>
     </mat-button>
     <p class="_text_button _text_button_footer">developing</p>
+  </div>
+  <div class="_container_button">
+    <mat-button class="_button" id="design"
+      [ngClass]="designActive ? '_active_button' : '_inactive_button'"
+      (click)="setButtonsStyle('design')">
+      <mat-icon class="_icon_nav"
+        [ngClass]="designActive ? '_active_icon' : '_inactive_icon'">local_florist
+      </mat-icon>
+    </mat-button>
+    <p class="_text_button _text_button_footer">design</p>
   </div>
   <div class="_container_button">
     <mat-button class="_button" id="biography"
@@ -64,15 +65,15 @@
         <mat-icon class="_icon_nav_hamburguer">alternate_email</mat-icon><span>write us</span>
       </mat-button>
       <hr class="_hr_hamburguer">
-      <mat-button class="_button_hamburguer" id="design"
-        (click)="setButtonsStyle('design')" mat-menu-item>
-        <mat-icon class="_icon_nav_hamburguer">local_florist</mat-icon><span>design
-        </span>
-      </mat-button>
       <mat-button class="_button_hamburguer" id="development"
         (click)="setButtonsStyle('development')" mat-menu-item>
         <mat-icon class="_icon_nav_hamburguer">developer_mode</mat-icon><span>developing</span>
       </mat-button>
+      <mat-button class="_button_hamburguer" id="design"
+      (click)="setButtonsStyle('design')" mat-menu-item>
+      <mat-icon class="_icon_nav_hamburguer">local_florist</mat-icon><span>design
+      </span>
+    </mat-button>
       <mat-button class="_button_hamburguer" id="biography"
         (click)="setButtonsStyle('biography')" mat-menu-item>
         <mat-icon class="_icon_nav_hamburguer">album</mat-icon><span>marketing</span>
