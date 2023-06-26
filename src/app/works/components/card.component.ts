@@ -1,19 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import { Card } from '../../../models/models';
+import { Card } from '../../models/models';
 
 @Component({
-  selector: 'app-development',
-  templateUrl: './development.component.html',
-  styleUrls: ['./development.component.scss']
+  selector: 'app-card',
+  templateUrl: './card.component.html',
+  styleUrls: ['./card.component.scss']
 })
-export class DevelopmentComponent implements OnInit {
+export class CardComponent implements OnInit {
 
- 
   cards: Card[] = [
     {
       id: 1,
-      tittle: 'Custom Software',
-      text: 'Custom software development is a **practice** that focuses on creating tailored digital solutions to meet the specific needs of a business or client. Unlike off-the-shelf or commercial software, **custom software** is designed to **adapt** to the unique requirements of an organization, enabling greater efficiency and productivity. This personalized approach involves **detailed analysis of the client´s processes and requirements, followed by the design, development, and deployment of a bespoke technological solution. Custom software can encompass a wide range of applications, including enterprise systems, management platforms, e-commerce solutions, data analysis tools, and more. The key to successful custom software lies in its ability to deliver a precise and scalable solution, tailored to the needs and goals of each client.',
+      tittle: 'UX | UI',
+      text: 'Is a discipline that focuses on creating pleasant, intuitive and satisfying digital experiences for users. UX design focuses on understanding user needs, expectations, and behaviors, as well as optimizing the usability and usability of a digital product or service. On the other hand, UI design refers to the visual appearance and interaction of elements in the interface, including the design of buttons, icons, typographies, and color schemes. The goal of UX/UI design is to ensure that users can interact efficiently and pleasantly with a digital product, ensuring that it meets their objectives and provides them with a positive and satisfying experience.',
       wordsToHighlight: ['focuses on creating pleasant'],   
       image: '../../../../assets/images/works/DG.png',
       showFullText: false,

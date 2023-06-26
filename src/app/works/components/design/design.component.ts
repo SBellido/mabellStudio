@@ -9,6 +9,8 @@ import { Card } from '../../../models/models';
 
 export class DesignComponent implements OnInit {
 
+  public area: string = 'design';
+
   cards: Card[] = [
     {
       id: 1,
