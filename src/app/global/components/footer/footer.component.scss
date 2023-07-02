@@ -136,6 +136,12 @@
       $third_color_light 100%
     );
   }
+  ._contact_buttons:hover {
+    background: linear-gradient(
+      0deg, $second_color_light 33%, 
+      $second_color_lighter 100%
+    );
+  }
 
   div._divisor_bottom {
     margin-top: 3rem;
@@ -236,8 +242,14 @@
     transform: scale(1.2);
     opacity: 100%;
   }
-  button._btn_footer:hover {
-    background: $third_color_light;
+  a:hover {
+    background: none;
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 100%;
   }
 
 }

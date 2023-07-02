@@ -14,7 +14,7 @@ export class DesignComponent implements OnInit {
   cards: Card[] = [
     {
       id: 1,
-      tittle: 'ux | ui',
+      tittle: 'UX | UI',
       text: 'Diseño que se centra en crear experiencias digitales agradables, intuitivas y satisfactorias para los usuarios. El diseño de UX se centra en comprender las necesidades, expectativas y comportamientos de los usuarios, así como en optimizar la usabilidad y la usabilidad de un producto o servicio digital. Por otro lado, el diseño de la interfaz de usuario se refiere a la apariencia visual y la interacción de los elementos en la interfaz, incluido el diseño de botones, iconos, tipografías y esquemas de color. y experiencia satisfactoria. El objetivo del diseño UX/UI es garantizar que los usuarios puedan interactuar de manera eficiente y agradable con un producto digital, asegurando que cumpla con sus objetivos y les brinde una experiencia positiva y satisfactoria.',
       image: '../../../../assets/images/works/DG.png',
       showFullText: false,
