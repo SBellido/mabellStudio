@@ -16,21 +16,8 @@ import { WorksComponent } from './works.component';
 import { HomeComponent } from './components/home/home.component';
 import { DesignComponent } from './components/design/design.component';
 import { DevelopmentComponent } from './components/development/development.component';
-import { InterventionComponent } from './components/intervention/intervention.component';
-import { BiographyComponent } from './components/biography/biography.component';
-import { GraphicComponent } from './components/design/components/graphic/graphic.component';
-import { UxUiComponent } from './components/design/components/ux-ui/ux-ui.component';
-import { ExperimentalComponent } from './components/design/components/experimental/experimental';
-import { AcademicComponent } from './components/biography/components/academic/academic.component';
-import { LaborComponent } from './components/biography/components/labor/labor.component';
-import { PersonalComponent } from './components/biography/components/personal/personal.component';
-import { PrivateComponent } from './components/intervention/components/private/private.component';
-import { PublicComponent } from './components/intervention/components/public/public.component';
-import { VLifeComponent } from './components/design/components/ux-ui/components/v-life/v-life.component';
-import { TravelLogComponent } from './components/design/components/ux-ui/components/travel-log/travel-log.component';
-import { NightComponent } from './components/design/components/ux-ui/components/night/night.component';
-import { HuntComponent } from './components/design/components/ux-ui/components/hunt/hunt.component';
 import { CardComponent } from './components/card.component';
+import { MarketingComponent } from './components/marketing/marketing.component';
 
 @NgModule({
   declarations: [
@@ -38,21 +25,8 @@ import { CardComponent } from './components/card.component';
     HomeComponent,
     DesignComponent,
     DevelopmentComponent,
-    InterventionComponent,
-    BiographyComponent,
-    GraphicComponent,
-    UxUiComponent,
-    ExperimentalComponent,
-    AcademicComponent,
-    LaborComponent,
-    PersonalComponent,
-    PrivateComponent,
-    PublicComponent,
-    VLifeComponent,
-    TravelLogComponent,
-    NightComponent,
-    HuntComponent,
     CardComponent,
+    MarketingComponent,
   ],
   imports: [
     CommonModule,

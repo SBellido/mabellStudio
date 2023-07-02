@@ -10,7 +10,6 @@ export interface Card {
   id: number;
   tittle: string; 
   text: string;
-  wordsToHighlight: string[];
   image: string;
   showFullText: boolean;
   truncatedText: string;

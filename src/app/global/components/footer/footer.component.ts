@@ -11,7 +11,7 @@ export class FooterComponent implements OnInit {
 
   designActive:boolean = false;
   developmentActive:boolean = false;
-  interventionActive:boolean = false;
+  marketingActive:boolean = false;
   biographyActive:boolean = false;
 
   constructor(private router: Router) { 
@@ -27,31 +27,31 @@ export class FooterComponent implements OnInit {
     if (item === 'design') {
       this.designActive = true;
       this.developmentActive = false; 
-      this.interventionActive = false; 
+      this.marketingActive = false; 
       this.biographyActive = false; 
       this.router.navigate(['works/design']);
     } else if (item === 'development') {
         this.developmentActive = true;
         this.designActive = false; 
-        this.interventionActive = false; 
+        this.marketingActive = false; 
         this.biographyActive = false; 
         this.router.navigate(['works/development']);
-    } else if (item === 'intervention') {
-        this.interventionActive = true; 
+    } else if (item === 'marketing') {
+        this.marketingActive = true; 
         this.designActive = false; 
         this.developmentActive = false; 
         this.biographyActive = false;       
-        this.router.navigate(['works/intervention']);
+        this.router.navigate(['works/marketing']);
     } else if (item === 'biography') {
         this.biographyActive = true; 
         this.designActive = false; 
         this.developmentActive = false; 
-        this.interventionActive = false; 
+        this.marketingActive = false; 
         this.router.navigate(['works/biography']);
     } else {
         this.designActive = false; 
         this.developmentActive = false; 
-        this.interventionActive = false; 
+        this.marketingActive = false; 
         this.biographyActive = false;
         this.router.navigate(['works/home']);
     }

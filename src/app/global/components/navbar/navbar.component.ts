@@ -12,8 +12,7 @@ export class NavbarComponent implements OnInit {
 
   designActive:boolean = false;
   developmentActive:boolean = false;
-  interventionActive:boolean = false;
-  biographyActive:boolean = false;
+  marketingActive:boolean = false;
 
   constructor(private router: Router) { 
   }
@@ -27,32 +26,22 @@ export class NavbarComponent implements OnInit {
     if (item === 'design') {
       this.designActive = true;
       this.developmentActive = false; 
-      this.interventionActive = false; 
-      this.biographyActive = false; 
+      this.marketingActive = false; 
       this.router.navigate(['works/design']);
     } else if (item === 'development') {
         this.developmentActive = true;
         this.designActive = false; 
-        this.interventionActive = false; 
-        this.biographyActive = false; 
+        this.marketingActive = false; 
         this.router.navigate(['works/development']);
-    } else if (item === 'intervention') {
-        this.interventionActive = true; 
+    } else if (item === 'marketing') {
+        this.marketingActive = true; 
         this.designActive = false; 
         this.developmentActive = false; 
-        this.biographyActive = false;       
-        this.router.navigate(['works/intervention']);
-    } else if (item === 'biography') {
-        this.biographyActive = true; 
-        this.designActive = false; 
-        this.developmentActive = false; 
-        this.interventionActive = false; 
-        this.router.navigate(['works/biography']);
+        this.router.navigate(['works/marketing']);
     } else {
         this.designActive = false; 
         this.developmentActive = false; 
-        this.interventionActive = false; 
-        this.biographyActive = false;
+        this.marketingActive = false; 
         this.router.navigate(['works/home']);
     }
     

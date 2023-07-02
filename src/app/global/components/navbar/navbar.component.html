@@ -10,7 +10,7 @@
         [ngClass]="developmentActive ? '_active_icon' : '_inactive_icon'">developer_mode
       </mat-icon>
     </mat-button>
-    <p class="_text_button _text_button_footer">developing</p>
+    <p class="_text_button _text_button_footer">desarrollo</p>
   </div>
   <div class="_container_button">
     <mat-button class="_button" id="design"
@@ -20,20 +20,19 @@
         [ngClass]="designActive ? '_active_icon' : '_inactive_icon'">local_florist
       </mat-icon>
     </mat-button>
-    <p class="_text_button _text_button_footer">design</p>
+    <p class="_text_button _text_button_footer">diseño</p>
   </div>
   <div class="_container_button">
-    <mat-button class="_button" id="biography"
-      [ngClass]="biographyActive ? '_active_button' : '_inactive_button'"
-      (click)="setButtonsStyle('biography')">
+    <mat-button class="_button" id="marketing"
+      [ngClass]="marketingActive ? '_active_button' : '_inactive_button'"
+      (click)="setButtonsStyle('marketing')">
       <mat-icon class="_icon_nav"
-        [ngClass]="biographyActive ? '_active_icon' : '_inactive_icon'">album
+        [ngClass]="marketingActive ? '_active_icon' : '_inactive_icon'">album
       </mat-icon>
     </mat-button>
     <p class="_text_button _text_button_footer">marketing</p>
   </div>
-
-
+  
   <!-- <div class="_container_button">
     <a class="_btn_footer" target="_blank" href="https://api.whatsapp.com/send?phone=541121580848">
       <mat-icon class="_icon_nav">fingerprint</mat-icon>
@@ -58,26 +57,26 @@
     <mat-menu mat-button #menu="matMenu">
       <mat-button class="_button_hamburguer" id="biography"
         (click)="setButtonsStyle('biography')" mat-menu-item>
-        <mat-icon class="_icon_nav_hamburguer">perm_phone_msg</mat-icon><span>call us</span>
+        <mat-icon class="_icon_nav_hamburguer">perm_phone_msg</mat-icon><span>llámanos</span>
       </mat-button>
       <mat-button class="_button_hamburguer" id="biography"
         (click)="setButtonsStyle('biography')" mat-menu-item>
-        <mat-icon class="_icon_nav_hamburguer">alternate_email</mat-icon><span>write us</span>
+        <mat-icon class="_icon_nav_hamburguer">alternate_email</mat-icon><span>escríbenos</span>
       </mat-button>
       <hr class="_hr_hamburguer">
       <mat-button class="_button_hamburguer" id="development"
         (click)="setButtonsStyle('development')" mat-menu-item>
-        <mat-icon class="_icon_nav_hamburguer">developer_mode</mat-icon><span>developing</span>
+        <mat-icon class="_icon_nav_hamburguer">developer_mode</mat-icon><span>desarrollo</span>
       </mat-button>
       <mat-button class="_button_hamburguer" id="design"
-      (click)="setButtonsStyle('design')" mat-menu-item>
-      <mat-icon class="_icon_nav_hamburguer">local_florist</mat-icon><span>design
-      </span>
-    </mat-button>
-      <mat-button class="_button_hamburguer" id="biography"
-        (click)="setButtonsStyle('biography')" mat-menu-item>
-        <mat-icon class="_icon_nav_hamburguer">album</mat-icon><span>marketing</span>
+        (click)="setButtonsStyle('design')" mat-menu-item>
+        <mat-icon class="_icon_nav_hamburguer">local_florist</mat-icon><span>diseño
+        </span>
       </mat-button>     
+      <mat-button class="_button_hamburguer" id="marketing"
+        (click)="setButtonsStyle('marketing')" mat-menu-item>
+        <mat-icon class="_icon_nav_hamburguer">album</mat-icon><span>marketing</span>
+      </mat-button>
     </mat-menu>
 
     <div class="_container_logo_desktop" (click)="setButtonsStyle('home')">
