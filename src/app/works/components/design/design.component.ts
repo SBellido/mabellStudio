@@ -31,7 +31,7 @@ export class DesignComponent implements OnInit {
     {
       id: 3,
       tittle: 'animación & video',
-      text:'herramientas poderosas para contar historias, transmitir mensajes y captar la atención del público. Mediante la combinación de imágenes en movimiento, efectos visuales y narración cautivadora, la animación y el video permiten dar vida a ideas y conceptos de manera visualmente impactante. En Mabell Studio, nos apasiona crear animaciones y videos de alta calidad que transmitan emociones, informen y entretengan a la audiencia. Utilizamos nuestra experiencia en diseño, animación y producción de video para ofrecer soluciones audiovisuales innovadoras y creativas que destacan los valores de nuestra empresa: aprendizaje, superación, apertura y perseverancia..',
+      text:'Herramientas poderosas para contar historias, transmitir mensajes y captar la atención del público. Mediante la combinación de imágenes en movimiento, efectos visuales y narración cautivadora, la animación y el video permiten dar vida a ideas y conceptos de manera visualmente impactante. En Mabell Studio, nos apasiona crear animaciones y videos de alta calidad que transmitan emociones, informen y entretengan a la audiencia. Utilizamos nuestra experiencia en diseño, animación y producción de video para ofrecer soluciones audiovisuales innovadoras y creativas que destacan los valores de nuestra empresa: aprendizaje, superación, apertura y perseverancia..',
       image: '../../../../assets/images/works/DG.png',
       showFullText: false,
       truncatedText: '',

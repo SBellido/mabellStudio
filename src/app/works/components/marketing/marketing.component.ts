@@ -14,7 +14,7 @@ export class MarketingComponent implements OnInit {
     {
       id: 1,
       tittle: 'estrategias digitales',
-      text: 'Is a discipline that focuses on creating pleasant, intuitive and satisfying digital experiences for users. UX design focuses on understanding user needs, expectations, and behaviors, as well as optimizing the usability and usability of a digital product or service. On the other hand, UI design refers to the visual appearance and interaction of elements in the interface, including the design of buttons, icons, typographies, and color schemes. The goal of UX/UI design is to ensure that users can interact efficiently and pleasantly with a digital product, ensuring that it meets their objectives and provides them with a positive and satisfying experience.',
+      text: 'Son fundamentales en el entorno actual, donde la presencia en línea es esencial para el éxito de cualquier negocio. Estas estrategias engloban una serie de tácticas y herramientas digitales para promocionar productos o servicios, aumentar la visibilidad de la marca y captar clientes en el mundo digital. Entendemos la importancia de las estrategias digitales en el ámbito del marketing. Nos especializamos en el desarrollo de estrategias personalizadas que combinan el uso inteligente de las redes sociales, la optimización de motores de búsqueda (SEO), la publicidad en línea y el marketing de contenidos para alcanzar los objetivos comerciales de nuestros clientes. Nuestro enfoque se basa en la creatividad, la innovación y el análisis de datos para ofrecer resultados tangibles y mejorar la presencia en línea de nuestros clientes.',
       image: '../../../../assets/images/works/DG.png',
       showFullText: false,
       truncatedText: '',
@@ -22,7 +22,7 @@ export class MarketingComponent implements OnInit {
     {
       id: 2,
       tittle: 'posicionamiento web',
-      text: 'Is a creative and communicative discipline that is responsible for creating and combining visual elements, such as images, colors, typographies and shapes, to convey clear and effective messages. Its main objective is to communicate visually, through attractive and functional designs, either in print or digital media.Graphic design covers various areas, such as corporate identity, logo design, editorial layout, web design and advertising, among others. Its application is present in a wide variety of fields, from the business and advertising field to the artistic and cultural.',
+      text: 'Estrategia clave para mejorar la visibilidad y el tráfico orgánico de un sitio web en los motores de búsqueda. Mediante la implementación de técnicas de optimización, como el uso de palabras clave relevantes, la creación de contenido de calidad y la mejora de la estructura del sitio, es posible lograr que una página web aparezca en los primeros resultados de búsqueda. En Mabell Studio, somos expertos en posicionamiento web. Trabajamos de la mano de nuestros clientes para entender sus necesidades y objetivos, y desarrollamos estrategias personalizadas para mejorar su visibilidad en línea. Nuestro enfoque se basa en prácticas éticas y actualizadas de SEO, combinadas con análisis de datos y seguimiento de resultados, para garantizar un posicionamiento efectivo y duradero en los motores de búsqueda.',
       image: '../../../../assets/images/works/DG.png',
       showFullText: false,
       truncatedText: '',
@@ -30,7 +30,7 @@ export class MarketingComponent implements OnInit {
     {
       id: 3,
       tittle: 'social media',
-      text:'Is a design and animation technique that combines graphic elements, movement and narrative to create dynamic and attractive visual content. Through the use of visual effects, fluid transitions and captivating animations, motion graphics seeks to communicate effectively and memorably. This discipline is applied in various media, such as promotional videos, presentations, advertising and audiovisual content in general. The objective of motion graphics is to convey messages in a clear, entertaining and persuasive way, capturing the attention of the viewer and generating visual impact. By combining graphic design, animation and sound, motion graphics allows you to tell captivating visual stories that stay in the minds of the audience.',
+      text:'Las redes sociales han transformado la forma en que nos comunicamos y conectamos con el mundo. El marketing en redes sociales se ha convertido en una estrategia fundamental para las empresas, permitiéndoles llegar a una audiencia más amplia y generar engagement con sus seguidores. En Mabell Studio, entendemos el poder de las redes sociales y nos especializamos en el desarrollo de estrategias efectivas de social media. Trabajamos en colaboración con nuestros clientes para identificar sus objetivos y crear contenido relevante y atractivo para sus audiencias en diferentes plataformas sociales. Nuestro enfoque se basa en la planificación estratégica, la gestión de la comunidad, la monitorización de resultados y el aprovechamiento de las tendencias actuales para lograr el máximo impacto en las redes sociales.',
       image: '../../../../assets/images/works/DG.png',
       showFullText: false,
       truncatedText: '',

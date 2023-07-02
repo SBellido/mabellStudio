@@ -38,21 +38,20 @@
     margin-bottom: 1rem;
   }
   div._card {
-    // width: 80%;
     display: flex;
     align-items: center;
     flex-direction: column;
     background-color: white;
-    border-radius: 25px 25px 0 0;
+    border-radius: 25px 25px 25px 25px;
     box-shadow: 0px 0px 6px rgba(134, 42, 128, 0.178);
   }
-  // div._container_img_card {
-  //   display: flex;
-  //   margin: 0 1rem 0 1rem;
-  //   background-color: white;
-  //   border-radius: 0 0 25px 25px;
-  //   box-shadow: 0px 0px 6px rgba(134, 42, 128, 0.178);
-  // }
+  div._container_img_card {
+    display: flex;
+    margin: 0 1rem 0 1rem;
+    background-color: white;
+    border-radius: 0 0 25px 25px;
+    box-shadow: 0px 0px 6px rgba(134, 42, 128, 0.178);
+  }
   img._card_img {
     width: 100%;
     height: auto;
@@ -79,10 +78,12 @@
     font-size: small;
   }
   h4 {
+    text-transform:capitalize;
+
     display: block;
     margin-block-start: .7rem;
     margin-block-end: .7rem;
-    font-weight: bold;
+    font-weight: lighter;
     color: $second_color;
     font-size: large;
   }
@@ -93,36 +94,44 @@
 
 /* SCREEN 768px */
 @media (min-width: 768px) {
-
+ 
+  // CARDS
+  section._container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  div._card {
+    width: 14rem;
+    margin: auto;
+  }
   button.btn_see_more:hover {
     background-color:$second_color_light;
   }
 
-  div._container {
-    flex-direction: row;
-  }
-  div._container_info {
-    width: 30vw;
-  }
-  ._container_item {
-    padding: 10px;
-    width: 27vw;
-  }
-  // section._container_all_info {
-  //   display: flex;
-  //   flex-direction: column;
-  //   width: 33vw;
-  // }
-
 }
 
+/* SCREEN 1024px */
+@media (min-width: 1024px) {
 
+  // CARDS
+    section._container {
+      justify-content: center;
+    }
+    div._card {
+      width: 18rem;
+      margin: 0 1rem;
+    }
+  
+  }
+  
 
 /* SCREEN 1336px */
 @media (min-width: 1336px) {
 
-  ._container_item {
-    width: 35vw;
+// CARDS
+  div._card {
+    width: 22rem;
   }
 
 }
@@ -130,8 +139,8 @@
 /* SCREEN 1920px */
 @media (min-width: 1920px) {
 
-  ._container_item {
-    width: 22vw;
-  }
+  // ._container_item {
+  //   width: 22vw;
+  // }
 
 }

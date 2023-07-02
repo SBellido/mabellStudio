@@ -1,9 +1,9 @@
 <article class="_container_all">
+  <div class="_container_title">
+    <mat-icon class="_icon_nav">local_florist</mat-icon>
+    <h1 class="_title">{{ area }}</h1>
+  </div>
   <section class="_container">
-    <div class="_container_title">
-      <mat-icon class="_icon_nav">local_florist</mat-icon>
-      <h1 class="_title">{{ area }}</h1>
-    </div>
     <div class="_card_complete" *ngFor="let card of cards" >
       <div class="_card">
         <h4 class="_card_title">{{ card.tittle }}</h4>
@@ -22,11 +22,9 @@
           </a>
           </span>
         </button>
-        <!-- <div class="_container_img_card"> -->
-          <img class="_card_img" [src]="card.image" alt="Imagen">
-        <!-- </div> -->
+        <img class="_card_img" [src]="card.image" alt="Imagen">
       </div>
     </div>
-    <app-footer class="_footer"></app-footer>
   </section>
+  <app-footer class="_footer"></app-footer>
 </article>
