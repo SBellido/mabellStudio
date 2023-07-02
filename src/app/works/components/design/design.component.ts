@@ -14,20 +14,20 @@ export class DesignComponent implements OnInit {
   cards: Card[] = [
     {
       id: 1,
+      tittle: 'diseño gráfico',
+      text: 'Disciplina creativa y comunicativa que se encarga de crear y combinar elementos visuales, como imágenes, colores, tipografías y formas, para transmitir mensajes claros y efectivos. Su principal objetivo es comunicarse visualmente, a través de diseños atractivos y funcionales, ya sea en medios impresos o digitales. El diseño gráfico abarca diversas áreas, como identidad corporativa, diseño de logotipos, maquetación editorial, diseño web y publicidad, entre otras. Su aplicación está presente en una amplia variedad de campos, desde el ámbito empresarial y publicitario hasta el artístico y cultural.',
+      image: '../../../../assets/images/works/DG.png',
+      showFullText: false,
+      truncatedText: '',
+    }, 
+    {
+      id: 2,
       tittle: 'UX | UI',
       text: 'Diseño que se centra en crear experiencias digitales agradables, intuitivas y satisfactorias para los usuarios. El diseño de UX se centra en comprender las necesidades, expectativas y comportamientos de los usuarios, así como en optimizar la usabilidad y la usabilidad de un producto o servicio digital. Por otro lado, el diseño de la interfaz de usuario se refiere a la apariencia visual y la interacción de los elementos en la interfaz, incluido el diseño de botones, iconos, tipografías y esquemas de color. y experiencia satisfactoria. El objetivo del diseño UX/UI es garantizar que los usuarios puedan interactuar de manera eficiente y agradable con un producto digital, asegurando que cumpla con sus objetivos y les brinde una experiencia positiva y satisfactoria.',
       image: '../../../../assets/images/works/DG.png',
       showFullText: false,
       truncatedText: '',
     },    
-    {
-      id: 2,
-      tittle: 'gráfico',
-      text: 'Disciplina creativa y comunicativa que se encarga de crear y combinar elementos visuales, como imágenes, colores, tipografías y formas, para transmitir mensajes claros y efectivos. Su principal objetivo es comunicarse visualmente, a través de diseños atractivos y funcionales, ya sea en medios impresos o digitales. El diseño gráfico abarca diversas áreas, como identidad corporativa, diseño de logotipos, maquetación editorial, diseño web y publicidad, entre otras. Su aplicación está presente en una amplia variedad de campos, desde el ámbito empresarial y publicitario hasta el artístico y cultural.',
-      image: '../../../../assets/images/works/DG.png',
-      showFullText: false,
-      truncatedText: '',
-    }, 
     {
       id: 3,
       tittle: 'animación & video',
