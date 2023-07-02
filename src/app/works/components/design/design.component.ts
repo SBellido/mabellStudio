@@ -22,7 +22,7 @@ export class DesignComponent implements OnInit {
     },    
     {
       id: 2,
-      tittle: 'diseño gráfico',
+      tittle: 'gráfico',
       text: 'Disciplina creativa y comunicativa que se encarga de crear y combinar elementos visuales, como imágenes, colores, tipografías y formas, para transmitir mensajes claros y efectivos. Su principal objetivo es comunicarse visualmente, a través de diseños atractivos y funcionales, ya sea en medios impresos o digitales. El diseño gráfico abarca diversas áreas, como identidad corporativa, diseño de logotipos, maquetación editorial, diseño web y publicidad, entre otras. Su aplicación está presente en una amplia variedad de campos, desde el ámbito empresarial y publicitario hasta el artístico y cultural.',
       image: '../../../../assets/images/works/DG.png',
       showFullText: false,

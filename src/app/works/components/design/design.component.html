@@ -15,9 +15,9 @@
           {{ card.text.length > 150 ? (card.text.slice(0, 150) + '...') : card.text }}
           </ng-template>
         </p>
-        <button class="btn_see_more">
+        <button class="btn_see_more" (click)="toggleText(card)">
           <span *ngIf="card.text.length > 150">
-          <a class="_see_more" (click)="toggleText(card)">
+          <a class="_see_more">
               {{ card.showFullText ? 'ver menos' : 'ver más' }}
           </a>
           </span>
