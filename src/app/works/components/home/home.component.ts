@@ -25,7 +25,8 @@ export class HomeComponent implements OnInit {
     'curiosidad','amor','resultados','equipo','atención',
     'interés','riesgos','actitud','formación','familia',
     'capacitación','confianza','sueños','sinceridad',
-    'conocimiento','humildad','empatía','resolución','responsabilidad'
+    'conocimiento','humildad','empatía','resolución','responsabilidad',
+    'intelecto','ingenio'
   ];
 
   weightFont: number[] = [
