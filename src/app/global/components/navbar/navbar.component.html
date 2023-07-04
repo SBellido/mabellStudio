@@ -69,14 +69,18 @@
         <mat-icon class="_icon_nav_hamburguer">album</mat-icon><span>marketing</span>
       </mat-button>
       <hr class="_hr_hamburguer">
-      <mat-button class="_button_hamburguer" id="biography"
-        (click)="setButtonsStyle('biography')" mat-menu-item>
-        <mat-icon class="_icon_nav_hamburguer">perm_phone_msg</mat-icon><span>llámanos</span>
-      </mat-button>
-      <mat-button class="_button_hamburguer" id="biography"
-        (click)="setButtonsStyle('biography')" mat-menu-item>
-        <mat-icon class="_icon_nav_hamburguer">alternate_email</mat-icon><span>escríbenos</span>
-      </mat-button>
+      <a href="https://wa.me/34618863343" target="_blank">
+        <mat-button class="_button_hamburguer" id="biography"
+          (click)="setButtonsStyle('biography')" mat-menu-item>
+          <mat-icon class="_icon_nav_hamburguer">perm_phone_msg</mat-icon><span>llámanos</span>
+        </mat-button>
+      </a>
+      <a target="_blank" href="mailto:mabellstudio.contacto@gmail.com?subject=Consulta&body=Déjanos%20tu%20consulta.">
+        <mat-button class="_button_hamburguer" id="biography"
+          (click)="setButtonsStyle('biography')" mat-menu-item>
+          <mat-icon class="_icon_nav_hamburguer">alternate_email</mat-icon><span>escríbenos</span>
+        </mat-button>
+      </a>
     </mat-menu>
 
     <div class="_container_logo_desktop" (click)="setButtonsStyle('home')">
