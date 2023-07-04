@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Card } from '../../../models/models';
+import { Card_ } from '../../../models/models';
 
 @Component({
   selector: 'app-development',
@@ -11,7 +11,7 @@ export class DevelopmentComponent implements OnInit {
   public area: string = 'desarrollo';
 
 
-  cards: Card[] = [
+  cards: Card_[] = [
     {
       id: 1,
       tittle: 'software personalizado',
@@ -27,6 +27,7 @@ export class DevelopmentComponent implements OnInit {
       image: '../../../../assets/images/works/DG.png',
       showFullText: false,
       truncatedText: '',
+
     }, 
     {
       id: 3,
@@ -35,6 +36,7 @@ export class DevelopmentComponent implements OnInit {
       image: '../../../../assets/images/works/DG.png',
       showFullText: false,
       truncatedText: '',
+
     }
   ];
 
@@ -47,8 +49,17 @@ export class DevelopmentComponent implements OnInit {
   ngOnInit(): void {  
     this.topFunction();
   }
+  
+  // highlightWords(card: Card): string {
+  //   let highlightedText = card.text;
+  //   card.highlightedWords.forEach(word => {
+  //     const regex = new RegExp(word, 'gi');
+  //     highlightedText = highlightedText.replace(regex, '<strong>$&</strong>');
+  //   });
+  //   return highlightedText;
+  // }
 
-  toggleText(card: Card): void {
+  toggleText(card: Card_): void {
     card.showFullText = !card.showFullText;
     card.truncatedText = this.truncateText(card.text, 150);
   }

@@ -7,6 +7,7 @@ import { Card } from '../../../models/models';
   styleUrls: ['./design.component.scss'],
 })
 
+
 export class DesignComponent implements OnInit {
 
   public area: string = 'diseño';
@@ -15,10 +16,11 @@ export class DesignComponent implements OnInit {
     {
       id: 1,
       tittle: 'comunicación visual',
-      text: 'Disciplina creativa y comunicativa que se encarga de crear y combinar elementos visuales, como imágenes, colores, tipografías y formas, para transmitir mensajes claros y efectivos. Su principal objetivo es comunicarse visualmente, a través de diseños atractivos y funcionales, ya sea en medios impresos o digitales. El diseño gráfico abarca diversas áreas, como identidad corporativa, diseño de logotipos, maquetación editorial, diseño web y publicidad, entre otras. Su aplicación está presente en una amplia variedad de campos, desde el ámbito empresarial y publicitario hasta el artístico y cultural.',
+      text: 'Disciplina creativa y comunicativa que se encarga de crear y combinar elementos visuales, como imágenes, colores, tipografías y formas, para transmitir mensajes claros y efectivos. Su principal objetivo es comunicar visualmente a través de diseños atractivos y funcionales, ya sea en medios impresos o digitales. El diseño en comunicación visual abarca diversas áreas, como identidad corporativa, diseño de logotipos, maquetación editorial, diseño web y publicidad, entre otras. Su aplicación resuelve problemas tanto en el campo empresarial y publicitario, como en el cultural y artístico.',
       image: '../../../../assets/images/works/DG.png',
       showFullText: false,
       truncatedText: '',
+      highlightedWords: ['Disciplina creativa y comunicativa', 'imágenes, colores, tipografías y formas', 'mensajes claros y efectivos', ' diseños atractivos y funcionales,', 'identidad corporativa, diseño de logotipos, maquetación editorial, diseño web y publicidad,', 'campo empresarial, publicitario, cultural y artístico.'],
     }, 
     {
       id: 2,
@@ -27,6 +29,7 @@ export class DesignComponent implements OnInit {
       image: '../../../../assets/images/works/DG.png',
       showFullText: false,
       truncatedText: '',
+      highlightedWords: ['UX'],
     },    
     {
       id: 3,
@@ -35,6 +38,7 @@ export class DesignComponent implements OnInit {
       image: '../../../../assets/images/works/DG.png',
       showFullText: false,
       truncatedText: '',
+      highlightedWords: ['vida a ideas y conceptos'],
     }
   ];
 
@@ -46,6 +50,18 @@ export class DesignComponent implements OnInit {
 
   ngOnInit(): void {  
     this.topFunction();
+  }
+
+  highlightWords(card: Card): string {
+    let highlightedText = card.text;
+    card.highlightedWords.forEach((word) => {
+      const regex = new RegExp(word, 'gi');
+      highlightedText = highlightedText.replace(
+        regex,
+        `<span class="highlighted">${word}</span>`
+      );
+    });
+    return highlightedText;
   }
 
   toggleText(card: Card): void {

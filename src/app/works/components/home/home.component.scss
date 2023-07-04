@@ -102,7 +102,7 @@
     justify-content: center;
     align-items: center;
   }
-  .fixed-button {
+  ._fixed_button {
     padding: .5rem 1rem;
     border-radius: 25px;
     display: inherit;
@@ -111,13 +111,15 @@
     bottom: 8.5rem;
     z-index: 1;
     border: none;
-    box-shadow: 0px 0px 4px 0px #8e8e8e; 
+    cursor: pointer;
     color: $first_color;
-    -webkit-box-shadow: 0px 0px 4px 0px #8e8e8e; 
     background: linear-gradient(
       0deg, $third_color 33%, 
       $third_color_light 100%
     );
+  }
+  ._fixed_button:hover {
+    background: $second_color_light;
   }
   .mat-icon._icon_contact {
     margin-right: .5rem;

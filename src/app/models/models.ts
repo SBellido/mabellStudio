@@ -13,4 +13,14 @@ export interface Card {
   image: string;
   showFullText: boolean;
   truncatedText: string;
+  highlightedWords: string[];
+}
+
+export interface Card_ {
+  id: number;
+  tittle: string; 
+  text: string;
+  image: string;
+  showFullText: boolean;
+  truncatedText: string;
 }

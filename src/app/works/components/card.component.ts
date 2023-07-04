@@ -17,6 +17,7 @@ export class CardComponent implements OnInit {
       image: '../../../../assets/images/works/DG.png',
       showFullText: false,
       truncatedText: '',
+      highlightedWords: ['vida a ideas y conceptos'],
     },    
     {
       id: 2,
@@ -25,6 +26,7 @@ export class CardComponent implements OnInit {
       image: '../../../../assets/images/works/DG.png',
       showFullText: false,
       truncatedText: '',
+      highlightedWords: ['vida a ideas y conceptos'],
     }, 
     {
       id: 3,
@@ -33,6 +35,7 @@ export class CardComponent implements OnInit {
       image: '../../../../assets/images/works/DG.png',
       showFullText: false,
       truncatedText: '',
+      highlightedWords: ['vida a ideas y conceptos'],
     }
   ];
 
@@ -44,6 +47,14 @@ export class CardComponent implements OnInit {
 
   ngOnInit(): void {  
     this.topFunction();
+  }
+  highlightWords(card: Card): string {
+    let highlightedText = card.text;
+    card.highlightedWords.forEach(word => {
+      const regex = new RegExp(word, 'gi');
+      highlightedText = highlightedText.replace(regex, '<span class="highlighted">$&</span>');
+    });
+    return highlightedText;
   }
 
   toggleText(card: Card): void {

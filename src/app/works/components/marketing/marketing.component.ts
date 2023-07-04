@@ -18,6 +18,7 @@ export class MarketingComponent implements OnInit {
       image: '../../../../assets/images/works/DG.png',
       showFullText: false,
       truncatedText: '',
+      highlightedWords: ['herramientas'],     
     },    
     {
       id: 2,
@@ -26,6 +27,7 @@ export class MarketingComponent implements OnInit {
       image: '../../../../assets/images/works/DG.png',
       showFullText: false,
       truncatedText: '',
+      highlightedWords: ['optimización'],     
     }, 
     {
       id: 3,
@@ -34,6 +36,8 @@ export class MarketingComponent implements OnInit {
       image: '../../../../assets/images/works/DG.png',
       showFullText: false,
       truncatedText: '',
+      highlightedWords: ['la forma en que nos comunicamos'],     
+
     }
   ];
 
@@ -45,6 +49,15 @@ export class MarketingComponent implements OnInit {
 
   ngOnInit(): void {  
     this.topFunction();
+  }
+  
+  highlightWords(card: Card): string {
+    let highlightedText = card.text;
+    card.highlightedWords.forEach(word => {
+      const regex = new RegExp(word, 'gi');
+      highlightedText = highlightedText.replace(regex, '<strong>$&</strong>');
+    });
+    return highlightedText;
   }
 
   toggleText(card: Card): void {

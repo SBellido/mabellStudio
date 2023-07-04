@@ -18,6 +18,7 @@ import { DesignComponent } from './components/design/design.component';
 import { DevelopmentComponent } from './components/development/development.component';
 import { CardComponent } from './components/card.component';
 import { MarketingComponent } from './components/marketing/marketing.component';
+import { HighlightPipe } from './components/pipes/highlight.pipe';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { MarketingComponent } from './components/marketing/marketing.component';
     DevelopmentComponent,
     CardComponent,
     MarketingComponent,
+    HighlightPipe
   ],
   imports: [
     CommonModule,
