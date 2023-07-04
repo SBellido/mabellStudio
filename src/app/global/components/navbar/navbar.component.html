@@ -54,16 +54,7 @@
       (click)="setButtonsStyle('hamburguer')">
       <mat-icon class="_icon_hamburguer">menu</mat-icon>
     </mat-button>
-    <mat-menu mat-button #menu="matMenu">
-      <mat-button class="_button_hamburguer" id="biography"
-        (click)="setButtonsStyle('biography')" mat-menu-item>
-        <mat-icon class="_icon_nav_hamburguer">perm_phone_msg</mat-icon><span>llámanos</span>
-      </mat-button>
-      <mat-button class="_button_hamburguer" id="biography"
-        (click)="setButtonsStyle('biography')" mat-menu-item>
-        <mat-icon class="_icon_nav_hamburguer">alternate_email</mat-icon><span>escríbenos</span>
-      </mat-button>
-      <hr class="_hr_hamburguer">
+    <mat-menu mat-button #menu="matMenu"> 
       <mat-button class="_button_hamburguer" id="development"
         (click)="setButtonsStyle('development')" mat-menu-item>
         <mat-icon class="_icon_nav_hamburguer">developer_mode</mat-icon><span>desarrollo</span>
@@ -76,6 +67,15 @@
       <mat-button class="_button_hamburguer" id="marketing"
         (click)="setButtonsStyle('marketing')" mat-menu-item>
         <mat-icon class="_icon_nav_hamburguer">album</mat-icon><span>marketing</span>
+      </mat-button>
+      <hr class="_hr_hamburguer">
+      <mat-button class="_button_hamburguer" id="biography"
+        (click)="setButtonsStyle('biography')" mat-menu-item>
+        <mat-icon class="_icon_nav_hamburguer">perm_phone_msg</mat-icon><span>llámanos</span>
+      </mat-button>
+      <mat-button class="_button_hamburguer" id="biography"
+        (click)="setButtonsStyle('biography')" mat-menu-item>
+        <mat-icon class="_icon_nav_hamburguer">alternate_email</mat-icon><span>escríbenos</span>
       </mat-button>
     </mat-menu>
 
