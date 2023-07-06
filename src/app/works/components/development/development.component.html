@@ -8,14 +8,10 @@
       <div class="_card">
         <h4 class="_card_title">{{ card.tittle }}</h4>
         <ul class="_text_card">
-          <ng-container *ngFor="let item of card.text">
-            <li *ngIf="!card.showFullText && item.length > 150">{{ item.slice(0, 150) + '...' }}</li>
-            <li *ngIf="card.showFullText || item.length <= 150">{{ item }}</li>
-          </ng-container>
+          <li class="_li" *ngFor="let item of card.text;">
+            {{ item }}
+          </li>
         </ul>
-        <button class="_btn_see_more" (click)="toggleText(card)">
-          {{ card.showFullText ? 'ver menos' : 'ver más' }}
-        </button>
         <img class="_card_img" [src]="card.image" alt="Imagen">
       </div>
     </div>

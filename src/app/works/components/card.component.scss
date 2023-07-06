@@ -64,11 +64,15 @@
   }
   ul._text_card {
     color: $second_color_dark;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
+    margin-block-start: .5em;
+    margin-block-end: 2em;
     margin-inline-start: 1rem;
     margin-inline-end: 1rem;
     line-height: 1.4;
+    padding-inline-start: 1.5rem;
+  }
+  li._li {
+    margin: .5rem 0;
   }
   .highlighted {
     font-weight: bold;

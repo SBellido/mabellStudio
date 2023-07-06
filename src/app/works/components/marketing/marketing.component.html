@@ -1,24 +1,20 @@
 <article class="_container_all">
-    <div class="_container_title">
-      <mat-icon class="_icon_nav">album</mat-icon>
-      <h1 class="_title">{{ area }}</h1>
-    </div>
-    <section class="_container">
-      <div class="_card_complete" *ngFor="let card of cards">
-        <div class="_card">
-          <h4 class="_card_title">{{ card.tittle }}</h4>
-          <ul class="_text_card">
-            <ng-container *ngFor="let item of card.text">
-              <li *ngIf="!card.showFullText && item.length > 150">{{ item.slice(0, 150) + '...' }}</li>
-              <li *ngIf="card.showFullText || item.length <= 150">{{ item }}</li>
-            </ng-container>
-          </ul>
-          <button class="_btn_see_more" (click)="toggleText(card)">
-            {{ card.showFullText ? 'ver menos' : 'ver más' }}
-          </button>
-          <img class="_card_img" [src]="card.image" alt="Imagen">
-        </div>
+  <div class="_container_title">
+    <mat-icon class="_icon_nav">local_florist</mat-icon>
+    <h1 class="_title">{{ area }}</h1>
+  </div>
+  <section class="_container">
+    <div class="_card_complete" *ngFor="let card of cards">
+      <div class="_card">
+        <h4 class="_card_title">{{ card.tittle }}</h4>
+        <ul class="_text_card">
+          <li class="_li" *ngFor="let item of card.text;">
+            {{ item }}
+          </li>
+        </ul>
+        <img class="_card_img" [src]="card.image" alt="Imagen">
       </div>
-    </section>
-    <app-footer class="_footer"></app-footer>
-  </article>
+    </div>
+  </section>
+  <app-footer class="_footer"></app-footer>
+</article>

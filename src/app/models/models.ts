@@ -13,5 +13,4 @@ export interface Card {
   image: string;
   showFullText: boolean;
   truncatedText: string;
-  highlightedWords: string[];
 }
