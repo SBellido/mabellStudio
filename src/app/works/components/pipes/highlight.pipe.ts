@@ -4,12 +4,12 @@ import { Pipe, PipeTransform } from '@angular/core';
   name: 'highlight'
 })
 export class HighlightPipe implements PipeTransform {
-  transform(value: string, keywords: string[]): string {
-    if (!keywords || keywords.length === 0) {
-      return value;
+  transform(text: string, highlightedWords: string[]): string {
+    if (!highlightedWords || highlightedWords.length === 0) {
+      return text;
     }
-    
-    const regex = new RegExp(keywords.join('|'), 'gi');
-    return value.replace(regex, match => `<span class="highlighted">${match}</span>`);
+
+    const regex = new RegExp(`(${highlightedWords.join('|')})`, 'gi');
+    return text.replace(regex, '<span class="highlighted">$&</span>');
   }
 }

@@ -2,6 +2,11 @@
 
 /* SCREEN 0px */
 @media (min-width: 0px) {
+  .highlighted {
+    color: red;
+    font-weight: bold;
+  }
+
   articel._container_all {
     display: flex;
     flex-direction: row;
@@ -57,7 +62,7 @@
     height: auto;
     border-radius: 0 0 25px 25px;
   }
-  p._text_card {
+  ul._text_card {
     color: $second_color_dark;
     margin-block-start: 0em;
     margin-block-end: 0em;
@@ -68,18 +73,21 @@
   .highlighted {
     font-weight: bold;
   }
-  button.btn_see_more {
+  ._btn_see_more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 1rem 0 1rem 0;
-    padding: .1rem 1rem;
+    padding: .2rem 1rem;
     border-radius: 25px;
     background-color:$third_color;
     cursor: pointer;
     border: none;
-  }
-  a._see_more {
-    font-weight: bold;
+    width: auto;
+    height: auto;
     color: $first_color;
     font-size: small;
+    font-weight: 600;
   }
   h4 {
     text-transform:capitalize;
@@ -92,7 +100,6 @@
   }
 
 }
-
 
 
 /* SCREEN 768px */
@@ -108,8 +115,11 @@
     width: 14rem;
     margin: auto;
   }
-  button.btn_see_more:hover {
+  button._btn_see_more:hover {
     background-color:$second_color_light;
+  }
+  h4 {
+    font-size: large;
   }
 
 }
@@ -124,6 +134,9 @@
     div._card {
       width: 18rem;
       margin: 0 1rem;
+    }
+    h4 {
+      font-size: x-large;
     }
   
   }
