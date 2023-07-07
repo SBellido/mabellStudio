@@ -9,6 +9,7 @@ import { Card } from '../../../models/models';
 export class MarketingComponent implements OnInit {
 
   public area: string = 'marketing';
+  public icon: string = 'album';
 
   cards: Card[] = [
     {
@@ -30,7 +31,7 @@ export class MarketingComponent implements OnInit {
     {
       id: 3,
       tittle: 'social media',
-      text:['Crea contenido relevante y atractivo','Permite llegar a una mayor audiencia.','Genera engagement en sus seguidores.','Gestiona comunidad, emplea tendencias.'],
+      text:['Crea contenido relevante y atractivo.','Permite llegar a una mayor audiencia.','Genera engagement en sus seguidores.','Gestiona comunidad, emplea tendencias.'],
       image: '../../../../assets/images/social_media.jpg',
       showFullText: false,
       truncatedText: '',

@@ -9,6 +9,7 @@ import { Card } from '../../../models/models';
 export class DevelopmentComponent implements OnInit {
 
   public area: string = 'desarrollo';
+  public icon: string = 'developer_mode';
 
   cards: Card[] = [
     {

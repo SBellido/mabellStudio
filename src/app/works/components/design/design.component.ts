@@ -10,6 +10,8 @@ import { Card } from '../../../models/models';
 export class DesignComponent implements OnInit {
 
   public area: string = 'diseño';
+  public icon: string = 'local_florist';
+
 
   cards: Card[] = [
     {
