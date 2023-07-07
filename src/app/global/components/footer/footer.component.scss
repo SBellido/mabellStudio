@@ -124,13 +124,13 @@
     width: 14rem;
     height: auto;
   }  
+
   div._contact_buttons {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  ._contact_buttons {
-    // padding: .5rem 1rem;
+  ._button_contact {
     border-radius: 50px;
     display: inherit;
     align-items: center;
@@ -143,22 +143,27 @@
       $third_color_light 100%
     );
   }
-  ._contact_buttons:hover {
-    background: $second_color_light;
-  }
-  // ._contact_buttons { 
+
+  // div._contact_buttons {
   //   display: flex;
   //   justify-content: center;
   //   align-items: center;
-  //   border-radius: 50px;  
+  //   border-radius: 50px;
+  //   display: inherit;
+  //   align-items: center;
+  //   z-index: 1;
+  //   border: none;
   //   cursor: pointer;
   //   color: $first_color;
-  //   padding: 0;
   //   background: linear-gradient(
   //     0deg, $third_color 33%, 
   //     $third_color_light 100%
   //   );
   // }
+  ._contact_buttons:hover {
+    background: $second_color_light;
+    border-radius: 50px;
+  }
   div._divisor_bottom {
     margin-top: 3rem;
   }
